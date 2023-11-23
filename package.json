@@ -7,11 +7,14 @@
     "dev": "nuxt dev --host --port 3003",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "predeploy": "npm run generate",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.0",
     "nuxt": "^3.8.2",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
