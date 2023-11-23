@@ -1,7 +1,9 @@
 {
-  "name": "nuxt-app",
+  "name": "gt2.0_nuxt",
   "private": true,
   "type": "module",
+  "version": "0.0.2",
+  "home": "https://kleale.github.io/gt2/",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --host --port 3003",
