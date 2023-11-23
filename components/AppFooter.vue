@@ -1,1 +1,7 @@
-<template>AppFooter</template>
+<template>
+
+
+</template>
+
+<style scoped>
+</style>
