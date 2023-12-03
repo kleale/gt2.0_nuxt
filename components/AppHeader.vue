@@ -3,11 +3,14 @@
     <nav class="flex space-x-4">
       <ul>
         <li v-for="item in navigation">
-          <a :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+          <a :key="item.name" :href="item.href" :class="[item.current ? 'current' : undefined]">
+            {{ item.name }}
+          </a>
         </li>
       </ul>
     </nav>
   </header>
+  <button class="btn">Hello daisyUI</button>
   <SidePanel />
 </template>
 
