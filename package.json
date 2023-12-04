@@ -28,7 +28,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.16",
     "@tabler/icons-vue": "^2.42.0",
     "vue3-highcharts": "^0.1.3"
   }
