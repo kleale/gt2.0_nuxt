@@ -1,0 +1,6 @@
+export { default as Gift } from '@/assets/img/icons/Gift.svg'
+export { default as Dota2 } from '@/assets/img/icons/Dota2.svg'
+export { default as Lol } from '@/assets/img/icons/Lol.svg'
+export { default as CS2 } from '@/assets/img/icons/CS2.svg'
+export { default as Hs } from '@/assets/img/icons/Hs.svg'
+export { default as Ow } from '@/assets/img/icons/Ow.svg'

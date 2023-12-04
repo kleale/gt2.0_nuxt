@@ -11,8 +11,20 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"),require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui")
+  ],
   daisyui: {
-    themes: ["light", "dark", "dim"],
+    themes: [{
+      gtTheme: {
+          ...require("daisyui/src/theming/themes")["dark"],
+          "primary": "#91CDD7",
+          "secondary": "#425661",
+          "base-100": "#18181D",
+      //   "accent": "#37cdbe",
+      //   "neutral": "#3d4451",
+      },
+    },"light", "dark", "night"],
   },
 }

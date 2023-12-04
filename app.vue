@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout data-theme="dim">
+  <NuxtLayout data-theme="gtTheme">
     <AppHeader />
     <NuxtPage />
     <AppFooter />
