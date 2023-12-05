@@ -1,1 +1,0 @@
-import{_ as e,c as a,d as t,F as c,a as n,o}from"./entry.b62b7e82.js";const s={},r=n("h1",null,"Index page",-1);function _(d,l){return o(),a(c,null,[r,t(" 123 ")],64)}const x=e(s,[["render",_]]);export{x as default};

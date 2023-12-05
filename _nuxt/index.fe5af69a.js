@@ -1,0 +1,1 @@
+import{_ as e,v as t,B as a,L as n,x as c,t as s}from"./entry.f652d9c4.js";const o={},r=c("h1",null,"Index page",-1);function _(d,l){return s(),t(n,null,[r,a(" 123 ")],64)}const f=e(o,[["render",_]]);export{f as default};
