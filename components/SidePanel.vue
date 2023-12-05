@@ -139,9 +139,9 @@ const navigation = [
 .collapse-title, .nocollapse, .collapse .collapse-content, .top-btns {
   border-bottom: 1px solid rgba(145, 205, 215, 0.2);
 }
-.drawer-side-inner {
-  /* background-color: #1c323d; */
-}
+/* .drawer-side-inner {
+  background-color: #1c323d;
+} */
 
 .collapse-plus > .collapse-title:after {
   top: 0.5rem;
