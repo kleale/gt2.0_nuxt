@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: ['nuxt-svgo'],
   postcss: {
     plugins: {
-      // 'postcss-import': {},
-      // 'tailwindcss/nesting': {},
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
     },

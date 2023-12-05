@@ -19,6 +19,9 @@ module.exports = {
     themes: [{
       gtTheme: {
           ...require("daisyui/src/theming/themes")["dark"],
+          // fontFamily: {
+          //   'sans': 'Inter, Helvetica, Arial, sans-serif',
+          // },
           "primary": "#91CDD7",
           "secondary": "#425661",
           "base-100": "#18181D",
