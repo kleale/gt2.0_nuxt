@@ -16,7 +16,7 @@
 
             <ul v-if="item.childrens.length" class="menu menu-vertical lg:menu-horizontal submenu p-0 m-0 pr-4">
               <li v-for="links in item.childrens">
-                <a :href="links.href">{{ links.name }}</a>
+                <a :href="links.href" class="hover:text-primary">{{ links.name }}</a>
               </li>
             </ul>
 
@@ -62,9 +62,9 @@
           </ul>
         </div>
         <button class="btn btn-xs hidden lg:block">13:00 MSK</button>
-        <div className="dropdown dropdown-end hidden lg:block">
-          <div tabIndex="{0}" role="button" className="btn btn-xs">RU</div>
-          <ul tabIndex="{0}" className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-22">
+        <div class="dropdown dropdown-end hidden lg:block">
+          <div role="button" class="btn btn-xs">RU</div>
+          <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-22">
             <li><a>Ru</a></li>
             <li><a>En</a></li>
           </ul>
@@ -77,7 +77,7 @@
           <!-- moon icon -->
           <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
         </label>
-        <label for="my-drawer" class="btn btn-ghost lg:hidden">
+        <label for="my-drawer" class="btn lg:hidden btn-sm">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
       </div>
