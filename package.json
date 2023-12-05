@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "0.0.2",
-  "home": "https://kleale.github.io/gt2/",
+  "home": "https://kleale.github.io/gt2.0_nuxt/",
   "scripts": {
     "dev": "nuxt dev --host --port 3003",
     "build": "nuxt build",
