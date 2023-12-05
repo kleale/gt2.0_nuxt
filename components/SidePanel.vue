@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer-side-inner bg-cyan-950 w-72 h-full">
+  <div class="drawer-side-inner w-72 h-full">
     <div class="flex border-b-cyan-200 border-b items-center content-center p-4">
       <div class="flex grow">
         <!-- <a href="/" class="lg:px-4 logo">
