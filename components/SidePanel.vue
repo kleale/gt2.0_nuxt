@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer-side-inner w-72 h-full">
+  <div class="drawer-side-inner w-72 h-full bg-opacity-90 bg-cyan-950 backdrop-blur transition-shadow duration-100 shadow-sm">
     <div class="flex border-b-cyan-200 border-b items-center content-center p-4">
       <div class="flex grow">
         <!-- <a href="/" class="lg:px-4 logo">
@@ -140,7 +140,7 @@ const navigation = [
   border-bottom: 1px solid rgba(145, 205, 215, 0.2);
 }
 .drawer-side-inner {
-  background-color: #1c323d;
+  /* background-color: #1c323d; */
 }
 
 .collapse-plus > .collapse-title:after {

@@ -1,9 +1,10 @@
 <template>
-  <header class="navbar bg-base-100">
-    <div class="navbar-start lg:w-auto lg:max-w-2xl">
-      <a href="/" class="lg:px-4 logo">
+  <header class="navbar text-primary sticky top-0 z-30 bg-base-100 bg-opacity-90 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] 
+  shadow-sm">
+    <div class="navbar-start lg:w-auto">
+      <a href="/" class="px-3 lg:px-4 logo">
         <!-- <img class="h-8 w-auto" :src="GTlogo" alt="GTlogo" /> -->
-        <GTlogo class="h-8 w-auto" alt="GTlogo" :fontControlled="false" />
+        <GTlogo2 class="h-8 w-auto" alt="GTlogo" :fontControlled="false" />
       </a>
     </div>
     <div class="navbar-center hidden lg:flex lg:grow">
@@ -31,12 +32,12 @@
         </li>
       </ul>
     </div>
-    <div class="navbar-end gap-2 lg:w-auto">
+    <div class="navbar-end gap-3 lg:w-auto px-3 lg:px-4">
       <a href="/">
         <!-- <img class="h-6 w-auto" :src="Gift" alt="Gift" /> -->
         <Gift class="h-5 w-auto" alt="Gift" :fontControlled="false" />
       </a>
-      <button class="btn btn-sm" v-if="!sign" @click="onSign">Sign</button>
+      <button class="btn btn-xs rounded text-primary btn-outline" v-if="!sign" @click="onSign">Sign</button>
       <div class="dropdown dropdown-end" v-if="sign">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
           <div class="w-8 rounded-full">
@@ -60,15 +61,15 @@
           <li><a>Logout</a></li>
         </ul>
       </div>
-      <button class="btn btn-xs hidden lg:block">13:00 MSK</button>
+      <button class="btn btn-xs hidden lg:block text-primary">13:00 MSK</button>
       <div class="dropdown dropdown-end hidden lg:block">
-        <div role="button" class="btn btn-xs">RU</div>
+        <div role="button" class="btn btn-xs text-primary">RU</div>
         <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-22">
           <li><a>Ru</a></li>
           <li><a>En</a></li>
         </ul>
       </div>
-      <label class="swap swap-rotate hidden lg:block">
+      <label class="swap swap-rotate hidden lg:inline-grid">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" class="theme-controller" value="synthwave" />
         <!-- sun icon -->
@@ -76,7 +77,7 @@
         <!-- moon icon -->
         <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" /></svg>
       </label>
-      <label for="my-drawer" class="btn lg:hidden btn-sm">
+      <label for="my-drawer" class="btn text-primary lg:hidden btn-xs rounded">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
     </div>
@@ -86,7 +87,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import GTlogo2 from "@/assets/img/GTlogo2.svg";
-import GTlogo from "@/assets/img/GTlogo.svg";
 import { Gift, Dota2, CS2, Hs, Lol, Ow } from "@/assets/img/icons/";
 
 const sign = ref(false);
@@ -145,8 +145,6 @@ const navigation = [
     childrens: [],
   },
 ];
-
-const isAuth = ref(false);
 </script>
 
 <style scoped>
