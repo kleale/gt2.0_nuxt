@@ -11,7 +11,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import nimg from "@/assets/img/nimg.png";
+import nimg from "~/assets/img/nimg.png";
 import { Dota2, CS2, Hs, Lol, Ow, Pubg, Fortnite } from "@/assets/img/icons/";
 </script>
 <style scoped>
