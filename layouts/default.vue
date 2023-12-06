@@ -9,7 +9,7 @@
           <slot />
         </main>
       </div>
-      <div class="drawer-side top-16">
+      <div class="drawer-side top-16 z-20">
         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
         <SidePanel />
       </div>

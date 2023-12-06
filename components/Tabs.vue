@@ -2,7 +2,7 @@
   <div class="flex items-center content-center justify-center mb-5">
     <div role="tablist" class="tabs tabs-boxed tabs-lg flex flex-row">
       <span v-for="(link, index) in menu" class="flex flex-row">
-        <a role="tab" class="tab" :class="link.title === selectedLink && 'tab-active'" :key="index" :href="link.sectionId" @click="isActive(link.title)">{{ link.title }}</a>
+        <a role="tab" class="tab hover:text-primary hover:bg-slate-400 hover:bg-opacity-5 transition" :class="link.title === selectedLink && 'tab-active'" :key="index" :href="link.sectionId" @click="isActive(link.title)">{{ link.title }}</a>
         <div class="divider divider-horizontal" v-if="index < menu.length - 1"></div>
       </span>
     </div>
@@ -40,9 +40,9 @@ const menu = [
     border: 0;
     border-radius: 5px;
     font-weight: 700;
-    color: white;
 
-    &.tab-active {
+    &.tab-active,
+    &.tab-active:hover {
       background: #2c96c3;
       color: white;
     }

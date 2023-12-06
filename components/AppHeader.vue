@@ -10,7 +10,7 @@
     <div class="navbar-center hidden lg:flex lg:grow">
       <ul class="menu menu-horizontal px-1 gamemenu">
         <li v-for="item in navigation" :class="[item.current ? 'current' : undefined]">
-          <a :key="item.name" :href="item.href" :class="[item.current ? 'text-primary' : 'text-secondary']">
+          <a :key="item.name" :href="item.href" :class="[item.current ? 'text-primary' : 'text-secondary']" class="hover:text-primary">
             <component class="w-5" :is="item.logo" :fontControlled="false" />
           </a>
 
@@ -32,12 +32,12 @@
         </li>
       </ul>
     </div>
-    <div class="navbar-end gap-3 lg:w-auto px-3 lg:px-4">
+    <div class="navbar-end gap-2 lg:w-auto px-3 lg:px-4">
       <a href="/">
         <!-- <img class="h-6 w-auto" :src="Gift" alt="Gift" /> -->
         <Gift class="h-5 w-auto" alt="Gift" :fontControlled="false" />
       </a>
-      <button class="btn btn-xs rounded text-primary btn-outline" v-if="!sign" @click="onSign">Sign</button>
+      <button class="btn btn-xs rounded text-primary btn-outline hover:bg-primary hover:border-primary" v-if="!sign" @click="onSign">Sign</button>
       <div class="dropdown dropdown-end" v-if="sign">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
           <div class="w-8 rounded-full">
@@ -61,9 +61,9 @@
           <li><a>Logout</a></li>
         </ul>
       </div>
-      <button class="btn btn-xs hidden lg:block text-primary">13:00 MSK</button>
-      <div class="dropdown dropdown-end hidden lg:block">
-        <div role="button" class="btn btn-xs text-primary">RU</div>
+      <button class="btn btn-xs hidden lg:block text-primary rounded hover:bg-primary hover:border-primary hover:text-black">13:00 MSK</button>
+      <div class="dropdown dropdown-end hidden lg:block rounded">
+        <div role="button" class="btn btn-xs text-primary rounded hover:bg-primary hover:border-primary hover:text-black">RU</div>
         <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-22">
           <li><a>Ru</a></li>
           <li><a>En</a></li>

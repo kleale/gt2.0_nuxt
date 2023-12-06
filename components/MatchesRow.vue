@@ -18,7 +18,6 @@
         <router-link to="/" class="flex justify-center px-1 border-x border-gray-800 flex-col w-16 md:w-20 md:h-10 md:px-2">
           <div class="flex items-center justify-center">
             
-            
           </div>
           <div class="justify-center text-center text-sm font-extrabold">{{ match.score }}</div>
         </router-link>
@@ -30,13 +29,14 @@
         </div>
       </div>
       <div class="flex items-center w-[175px] md:w-[152px] justify-end gap-3 pr-3">
-        <div class="flex" v-if="match.isLive">
-            <ClockIcon class="h-3" filled />
-            <div class="text-xs ml-1">{{ match.time }}</div>
-            <span class="bg-red-500 text-gray-900 text-xs font-semibold mt-0.5 px-1 rounded dark:bg-red-500 dark:text-gray-900" v-if="match.isLive">MAP{{ match.map }}</span>
-        
+        <div class="flex gap-3" v-if="match.isLive">
+            <div class="flex gap-1 text-red-400">
+                <ClockIcon class="h-3" filled />
+                <div class="text-xs">{{ match.time }}</div>
+            </div>
+            <span class="bg-red-400  text-gray-900 text-xs font-semibold mt-0.5 px-1 rounded dark:bg-red-500 dark:text-gray-900" v-if="match.isLive">MAP{{ match.map }}</span>
         </div>
-        <div class="flex flex-col justify-center items-center text-xs text-right text-secondary" v-if="!match.isLive">
+        <div class="text-xs text-right text-secondary" v-if="!match.isLive">
           {{ match.date }}
           {{ match.time }}
         </div>

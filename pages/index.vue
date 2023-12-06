@@ -5,20 +5,19 @@
   <Tabs/>
   <BlockLayout header="Best matches of the day">
     <template v-slot:header-extra>
-      <a href="" class="tooltip p-2 text-secondary" data-tip="Refresh">
+      <a href="" class="tooltip p-2 text-secondary hover:text-white" data-tip="Refresh">
         <IconRefresh class="w-6" filled :fontControlled="false"/>
       </a>
       <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-      <a href="" class="tooltip p-2 text-secondary" data-tip="Show the score">
+      <a href="" class="tooltip p-2 text-secondary hover:text-white" data-tip="Show the score">
         <IconScore class="w-6" filled :fontControlled="false"/>
       </a>
       <div class="divider divider-horizontal m-0 h-6 self-center"></div>
       <template v-for="(game, index) in games" >
-        <a href="" class="tooltip p-2 text-secondary" :data-tip="game.name">
+        <a href="" class="tooltip p-2 text-secondary hover:text-white" :data-tip="game.name">
           <component :is="game.logo" :fontControlled="false" class="w-5" />
         </a>
     </template>
-
     </template>
     <template v-for="(match, index) in matches"  >
       <MatchesRow :match="match"/>
