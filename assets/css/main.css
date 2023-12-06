@@ -22,3 +22,7 @@
  */
 }
 
+/* theme variables override */
+[data-theme=gtTheme] {
+  --rounded-box: .5rem;
+}
