@@ -2,58 +2,26 @@
   <BannersTopMobile />
   <!-- <NewsCardLarge /> -->
   <NewsCarousel />
-  <div class="flex items-center content-center justify-center">
-    <div role="tablist" class="tabs tabs-boxed tabs-lg flex flex-row">
-      <span v-for="(link, index) in menu" class="flex flex-row">
-        <a role="tab" class="tab" :class="link.title === selectedLink && 'tab-active'" :key="index" :href="link.sectionId" @click="isActive(link.title)">{{ link.title }}</a>
-        <div class="divider divider-horizontal" v-if="index < menu.length - 1"></div>
-      </span>
-    </div>
-  </div>
-
+  <Tabs/>
+  <BlockLayout header="Best matches of the day">
+    <template v-for="(match, index) in matches" >
+      <MatchesRow :match="match"/>
+    </template>
+  </BlockLayout>
+  <Pagination class="mt-5" />
 </template>
 
 <script setup lang="ts">
-const selectedLink = ref("Matches");
-const isActive = (title: string) => {
-  selectedLink.value = title;
-};
-const menu = [
-  {
-    title: "Matches",
-    sectionId: "#",
-  },
-  {
-    title: "Events",
-    sectionId: "#",
-  },
-  {
-    title: "News",
-    sectionId: "#",
-  },
+const matches = [
+  { id: 0, t1: "Astralis", t1Icon: "https://escorenews.com/media/logo/_60/t7169.webp", t2: "The Mongolz", t2Icon: "https://escorenews.com/media/logo/_60/t5270.webp", game: "dota2", gameId: "1", score: "1:0", date: "13.12.2023", time: "11:34", isLive: true, map: 1, event_id: 1, eventName: 'ESEA Open Season 47', eIcon: 'https://escorenews.com/media/event/_60/e8382.webp', type: 'BO3' },
+  { id: 0, t1: "Dota Geniuses", t1Icon: "/assets/img/none/team.svg", t2: "Flawless Goblins", t2Icon: "https://escorenews.com/media/logo/_60/t56255.webp", game: "dota2", gameId: "1", score: "1:0", date: "13.12.2023", time: "11:34", isLive: false, map: 2, event_id: 2, eventName: 'ESEA Open Season 47', eIcon: 'https://escorenews.com/media/event/_60/e8382.webp', type: 'BO3' },
+  { id: 0, t1: "Astralis", t1Icon: "https://escorenews.com/media/logo/_60/t7169.webp", t2: "The Mongolz", t2Icon: "https://escorenews.com/media/logo/_60/t5270.webp", game: "dota2", gameId: "1", score: "1:0", date: "13.12.2023", time: "11:34", isLive: true, map: 1, event_id: 1, eventName: 'ESEA Open Season 47', eIcon: 'https://escorenews.com/media/event/_60/e8382.webp', type: 'BO3' },
+  { id: 0, t1: "Dota Geniuses", t1Icon: "/assets/img/none/team.svg", t2: "Flawless Goblins", t2Icon: "https://escorenews.com/media/logo/_60/t56255.webp", game: "dota2", gameId: "1", score: "1:0", date: "13.12.2023", time: "11:34", isLive: false, map: 2, event_id: 2, eventName: 'ESEA Open Season 47', eIcon: 'https://escorenews.com/media/event/_60/e8382.webp', type: 'BO3' },
+  { id: 0, t1: "Astralis", t1Icon: "https://escorenews.com/media/logo/_60/t7169.webp", t2: "The Mongolz", t2Icon: "https://escorenews.com/media/logo/_60/t5270.webp", game: "dota2", gameId: "1", score: "1:0", date: "13.12.2023", time: "11:34", isLive: true, map: 1, event_id: 1, eventName: 'ESEA Open Season 47', eIcon: 'https://escorenews.com/media/event/_60/e8382.webp', type: 'BO3' },
+  { id: 0, t1: "Dota Geniuses", t1Icon: "/assets/img/none/team.svg", t2: "Flawless Goblins", t2Icon: "https://escorenews.com/media/logo/_60/t56255.webp", game: "dota2", gameId: "1", score: "1:0", date: "13.12.2023", time: "11:34", isLive: false, map: 2, event_id: 2, eventName: 'ESEA Open Season 47', eIcon: 'https://escorenews.com/media/event/_60/e8382.webp', type: 'BO3' },
+
 ];
 </script>
 
 <style scoped>
-.tabs-boxed {
-  padding: 0;
-  border-radius: 5px;
-  border: 1px solid #1f2328;
-  background: #1a1a20;
-  .tab {
-    border: 0;
-    border-radius: 5px;
-    font-weight: 700;
-    color: white;
-
-    &.tab-active{
-      background: #2C96C3;
-      color: white;
-    }
-  }
-  .divider {
-    margin: 15px 0;
-
-  }
-}
 </style>
