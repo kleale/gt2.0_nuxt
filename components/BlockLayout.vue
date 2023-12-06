@@ -1,13 +1,11 @@
 <template>
-  <div class="flex flex-col md:flex-row items-center p-2 rounded-t-md border-x border-t border-gray-300 dark:border-gray-700">
-    <h3 class="text-l font-bold dark:text-white grow pl-3 w-full pb-2 md:pb-0">{{ header }}</h3>
-    <div class="flex flex-col md:flex-row w-full">
-      <SelectGame class="pl-2 pb-2 md:w-40 md:pb-0" />
-      <SelectTeam class="pl-2 pb-2 md:w-40 md:pb-0" />
-      <SelectEvent class="pl-2 pb-2 md:w-40 md:pb-0" />
+  <div class="bg-block flex flex-col md:flex-row items-center p-2 rounded-t-md border-x border-t border-gray-800">
+    <h3 class="text-l font-bold text-white grow pl-3 pb-2 md:pb-0">{{ header }}</h3>
+    <div class="flex flex-col md:flex-row items-center content-center">
+      <slot name="header-extra" />
     </div>
   </div>
-  <div class="border border-gray-300 dark:border-gray-700 rounded-b-md">
+  <div class="border border-gray-800 rounded-b-md bg-base">
     <slot />
   </div>
 </template>
@@ -15,6 +13,11 @@
 <script setup lang="ts">
 const props = defineProps<{
   header: string;
-  game?: string;
 }>();
 </script>
+<style scoped>
+.bg-block {
+  background: rgb(49, 49, 54);
+  background: radial-gradient(ellipse at 10% 10%, rgb(42 42 47) 0%, rgb(27 27 33) 100%);
+}
+</style>
