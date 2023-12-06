@@ -1,4 +1,5 @@
 <template>
+  <div class="p-4 xl:p-0 xl:pt-4">
   <BannersTopMobile />
   <!-- <NewsCardLarge /> -->
   <NewsCarousel />
@@ -24,6 +25,7 @@
     </template>
   </BlockLayout>
   <Pagination class="mt-5" />
+</div>
 </template>
 
 <script setup lang="ts">

@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout data-theme="gtTheme">
-    <NuxtPage />
+    <NuxtPage/>
     <AppFooter />
   </NuxtLayout>
   

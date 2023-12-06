@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel carousel-end w-full">
+  <div class="carousel carousel-end w-full mb-5 gap-4">
     <div id="slide1" class="carousel-item relative " v-for="(slide, index) in slides">
       <NewsCardLarge :data="slide"/>
       <!-- <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
