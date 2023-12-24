@@ -16,22 +16,22 @@
     <div class="flex flex-col grow">
       <div class="flex flex-col w-full xl:flex-row">
         
-          <nav class="flex flex-row grow justify-center lg:justify-start  xl:flex-row gap-4">
+          <nav class="text-center md:flex md:flex-row md:grow md:justify-center lg:justify-start xl:flex-row gap-4 pb-4 md:p-0">
             <template v-for="item in navigation">
-              <a class="link link-hover uppercase text-primary opacity-30 hover:opacity-100">{{ item.name }}</a>
+              <a class="inline-flex p-2 md:p-0 link link-hover uppercase text-primary opacity-30 hover:opacity-100">{{ item.name }}</a>
               <span class="opacity-10 hidden lg:inline">•</span>
             </template>
           </nav>
         
-        <nav class="flex flex-row justify-center lg:flex-row lg:justify-start gap-4 ">
+        <nav class="text-center pt-4 md:flex md:flex-row md:grow justify-center lg:flex-row lg:justify-start gap-4 border-t border-secondary md:border-t-0 ">
           <template v-for="item in subnavigation">
-            <a class="link link-hover text-primary opacity-30 hover:opacity-100">{{ item.name }}</a>
+            <a class="inline-flex p-2 md:p-0 link link-hover text-primary opacity-30 hover:opacity-100">{{ item.name }}</a>
             <!-- <span class="opacity-10 hidden lg:inline">•</span> -->
           </template>
         </nav>
       </div>
-      <aside class="items-center opacity-20 text-center lg:text-left">
-        <p class="pt-4">game-tournaments.com is operated by GAMEAGEVENTURES LLP, a legal entity registered in United Kingdom, having its registered office at: Sidney Street, Folkestone, Kent, CT19 6HQ, UK; Company No.OC391978.</p>
+      <aside class="items-center opacity-20 text-center lg:text-left pt-1 md:pt-4">
+        <p>game-tournaments.com is operated by GAMEAGEVENTURES LLP, a legal entity registered in United Kingdom, having its registered office at: Sidney Street, Folkestone, Kent, CT19 6HQ, UK; Company No.OC391978.</p>
       </aside>
     </div>
   </footer>
