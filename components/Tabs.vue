@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center content-center justify-center mb-5">
+  <div class="flex items-center content-center justify-center">
     <div role="tablist" class="tabs tabs-boxed tabs-lg flex flex-row">
       <span v-for="(link, index) in menu" class="flex flex-row">
         <a role="tab" class="tab hover:text-primary hover:bg-slate-400 hover:bg-opacity-5 transition" :class="link.title === selectedLink && 'tab-active'" :key="index" :href="link.sectionId" @click="isActive(link.title)">{{ link.title }}</a>

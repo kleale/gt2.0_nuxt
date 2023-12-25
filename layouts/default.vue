@@ -1,6 +1,5 @@
 <template>
-  <div class="min-h-full">
-    <AppHeader />
+  <div class="defaultLayout min-h-full">
     <div class="drawer drawer-end">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
@@ -9,7 +8,7 @@
           <slot />
         </main>
       </div>
-      <div class="drawer-side top-16 z-20">
+      <div class="drawer-side z-50">
         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
         <SidePanel />
       </div>

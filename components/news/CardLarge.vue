@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="card card-compact text-white hover:text-primary border border-transparent transition hover:border-slate-500 hover:scale-105 max-w-sm image-full shadow-xl bg-base-100">
+  <a href="/" class="card card-compact text-white hover:text-primary border border-slate-700 transition hover:border-slate-500 hover:scale-95 max-w-sm image-full shadow-xl bg-base-100">
     <figure><img :src="data.src" alt="news" style="width: 100%" /></figure>
     <div class="card-body justify-end">
       <div class="flex">

@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar flex justify-center text-primary sticky top-0 z-30 bg-base-100 bg-opacity-60 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm">
+  <header class="navbar flex justify-center text-primary sticky top-0 z-50 bg-base-100 bg-opacity-60 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm">
     <div class="flex w-full max-w-7xl self-center">
       <div class="navbar-start lg:w-auto">
         <a href="/" class="px-3 h-8 logo flex">
@@ -32,7 +32,7 @@
           </li>
         </ul>
       </div>
-      <div class="navbar-end gap-2 flex  px-3 lg:px-4 items-center justify-end content-end">
+      <div class="navbar-end gap-2 flex px-3 lg:px-4 items-center justify-end content-end">
         <a href="#" class="btn btn-sm btn-ghost btn-circle mr-1 text-primary hover:bg-primary hover:text-black">
           <!-- <img class="h-6 w-auto" :src="Gift" alt="Gift" /> -->
           <Gift class="h-5 w-auto" alt="Gift" :fontControlled="false" />

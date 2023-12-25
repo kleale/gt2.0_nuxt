@@ -1,51 +1,50 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
-    <BannersTopMobile />
-    <!-- <NewsCardLarge /> -->
-    <NewsCarousel />
-    <Tabs />
-    <BlockLayout header="Best matches of the day">
-      <template v-slot:header-extra>
-        <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
-          <IconRefresh class="w-6" filled :fontControlled="false" />
-        </a>
-        <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-        <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" 
-          data-tip="Show the score">
-          <IconScore class="w-6" filled :fontControlled="false" />
-        </a>
-        <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-        <div class="hidden md:flex">
-          <template v-for="(game, index) in games">
-            <a href="" class="tooltip p-2 text-secondary hover:text-white" :data-tip="game.name">
-              <component :is="game.logo" :fontControlled="false" class="w-5" />
-            </a>
-          </template>
-        </div>
-        <div class="dropdown md:hidden">
-          <div tabindex="0" role="button" class="text-secondary hover:text-primary btn btn-sm btn-ghost">
-            <component :is="games[0].logo" :fontControlled="false" class="w-5" />
-            <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048"><path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path></svg>
-          </div>
-          <ul tabindex="0" class="dropdown-content z-[2] menu p-2 shadow bg-base-100 rounded-box w-22">
-            <template v-for="(game, index) in games">
-              <li>
-                <a href="" class="tooltip p-2 text-secondary hover:text-white" :data-tip="game.name">
-                  <component :is="game.logo" :fontControlled="false" class="w-5" />
-                </a>
-              </li>
+    <div class="grid grid-cols-7 gap-5">
+      <div class="col-span-12 md:col-span-5">
+        <div class="flex flex-col gap-5">
+          <BannersTopMobile />
+          <!-- <NewsCardLarge /> -->
+          <NewsCarousel />
+          <Tabs />
+          <BlockLayout header="Best matches of the day">
+            <template v-slot:header-extra>
+              <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
+                <IconRefresh class="w-6" filled :fontControlled="false" />
+              </a>
+              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
+              <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
+                <IconScore class="w-6" filled :fontControlled="false" />
+              </a>
+              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
+
+              <CommonGamesLinks/>
             </template>
-          </ul>
+            <template v-for="(match, index) in matches">
+              <MatchesRow :match="match" />
+            </template>
+          </BlockLayout>
+          <div class="flex justify-center">
+            <Pagination />
+          </div>
+          <SignUp />
         </div>
-      </template>
-      <template v-for="(match, index) in matches">
-        <MatchesRow :match="match" />
-      </template>
-    </BlockLayout>
-    <div class="flex justify-center">
-      <Pagination class="mt-5 mb-5" />
+      </div>
+      <div class="col-span-12 md:col-span-2 gap-5">
+        <div class="flex flex-col gap-5">
+          <TextBlock>
+            <template v-slot:header-extra> Stream and video, teams and players, statistics and analytics </template>
+            On GT you can find all <a href="/">Dota 2</a> and CS:GO matches, watch streams and videos, look for detailed statistics on the teams, players and games, make predictions for the games and sell subscriptions for them. Follow Esports with GT!
+          </TextBlock>
+          <BlockLayout header="News">
+            <template v-slot:header-extra>
+              <CommonGamesLinks :isCompact="true"/>
+            </template>
+            <NewsCardLarge2 :data="news"/>
+          </BlockLayout>
+        </div>
+      </div>
     </div>
-    <SignUp />
   </div>
 </template>
 
@@ -72,6 +71,14 @@ const matches = [
   { id: 14, t1: "Astralis", t1Icon: "https://escorenews.com/media/logo/_60/t7169.webp", t2: "The Mongolz", t2Icon: "https://escorenews.com/media/logo/_60/t5270.webp", game: Lol, gameId: "1", score: "1:0", date: "Oct 14", time: "11:34", isLive: false, map: 1, event_id: 1, eventName: "ESEA Open Season 47", eIcon: "https://escorenews.com/media/event/_60/e7632.webp", type: "BO3" },
   { id: 15, t1: "Dota Geniuses", t1Icon: "https://escorenews.com/media/logo/_60/t7169.webp", t2: "Flawless Goblins", t2Icon: "https://escorenews.com/media/logo/_60/t56255.webp", game: Fortnite, gameId: "1", score: "1:0", date: "Oct 14", time: "11:34", isLive: false, map: 2, event_id: 2, eventName: "ESEA Open Season 47", eIcon: "https://escorenews.com/media/event/_60/e8382.webp", type: "BO3" },
 ];
+
+const news = { name: "ZywOo's first Major MVP, dupreeh and zonic's 5th Major win, and other storilines closed at BLAST Paris Major 2023", id: 0, src: "https://escorenews.com/media/news/_468/n53609.webp", game: Dota2 }
+
+const activeScoreMode = ref(false);
+const setActiveScoreMode = () => {
+  activeScoreMode.value = !activeScoreMode.value;
+};
+
 const games = [
   {
     name: "DOTA2",
@@ -116,11 +123,6 @@ const games = [
     logo: Pubg,
   },
 ];
-
-const activeScoreMode = ref(false)
-const setActiveScoreMode = () => {
-  activeScoreMode.value = !activeScoreMode.value
-}
 </script>
 
 <style scoped></style>
