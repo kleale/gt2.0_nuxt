@@ -32,7 +32,7 @@
           </li>
         </ul>
       </div>
-      <div class="navbar-end gap-2 lg:flex lg:w-auto px-3 lg:px-4 items-center">
+      <div class="navbar-end gap-2 flex  px-3 lg:px-4 items-center justify-end content-end">
         <a href="#" class="btn btn-sm btn-ghost btn-circle mr-1 text-primary hover:bg-primary hover:text-black">
           <!-- <img class="h-6 w-auto" :src="Gift" alt="Gift" /> -->
           <Gift class="h-5 w-auto" alt="Gift" :fontControlled="false" />
