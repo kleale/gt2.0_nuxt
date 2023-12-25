@@ -9,7 +9,7 @@
           <a href="#" class="flex h-5 w-5">
             <img class="h-5 max-w-full" :src="match.t1Icon" :alt="match.t1" />
           </a>
-          <a href="#" class="flex text-right text-xs md:text-sm text-white text-[13px] leading-4 text-ellipsis overflow-hidden" w-[30px]> {{ match.t1 }}</a>
+          <a href="#" class="flex text-right text-xs md:text-sm text-white text-[13px] leading-4 text-ellipsis overflow-hidden md:w-fit"> {{ match.t1 }}</a>
         </div>
         <div class="flex flex-col justify-center items-center px-1 bg-gray-800 bg-opacity-20 h-14 w-[60px] md:w-20 md:h-14 md:px-2">
             <div class="badge badge-error badge-outline cursor-pointer text-xs md:text-sm" v-if="match.isLive && !isScore" @click="onShowScore">score</div>
@@ -20,7 +20,7 @@
           <a href="#" class="flex h-6 w-6">
             <img class="h-6 max-w-full" :src="match.t2Icon" :alt="match.t2" />
           </a>
-          <a href="#" class="flex text-xs md:text-sm text-white text-[13px] leading-4 text-ellipsis overflow-hidden w-[30px]"> {{ match.t2 }} </a>
+          <a href="#" class="flex text-xs md:text-sm text-white text-[13px] leading-4 text-ellipsis overflow-hidden md:w-fit"> {{ match.t2 }} </a>
         </div>
       </div>
       <div class="flex items-center w-[80px] md:w-[152px] justify-end gap-2 md:gap:3 pr-1 md:pr-3">

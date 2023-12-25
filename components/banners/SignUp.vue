@@ -18,7 +18,7 @@
     gap: 25px;
     align-self: stretch;
     border-radius: 5px;
-    background: linear-gradient(0deg, rgba(12, 17, 22, 0.80) 0%, rgba(12, 17, 22, 0.80) 100%), url(~/assets/img/bg_signup.png) 50% 80% no-repeat, lightgray -109.251px -22.361px / 290.789% 109.114% no-repeat;
+    background: linear-gradient(0deg, rgba(12, 17, 22, 0.80) 0%, rgba(12, 17, 22, 0.80) 100%), url("~/assets/img/bg_signup.png") 50% 80% no-repeat, lightgray -109.251px -22.361px / 290.789% 109.114% no-repeat;
 
 
     color: rgba(255, 255, 255, 0.30);
