@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer px-10 pt-10 pb-5 text-base-content flex flex-col lg:flex-row w-full max-w-7xl">
+  <footer class="footer px-10 md:px-0 pt-10 pb-5 text-base-content flex flex-col lg:flex-row w-full max-w-7xl">
     <div class="px-5 opacity-30 self-center">
       <svg width="54" height="28" viewBox="0 0 54 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M23.0136 17.6855L22.1771 22.3779C21.442 26.6137 19.3381 28.0087 14.8004 28.0087H6.28277C2.60729 28.0087 0.680664 26.7404 0.680664 23.6964C0.680664 23.1895 0.757121 22.606 0.857989 21.9973L1.7962 16.5946C2.63263 11.8768 4.83791 10.203 9.42627 10.203H18.486C18.6435 10.6832 18.8991 11.4197 19.3731 12.0524C20.0759 12.9921 21.2362 13.7032 21.2362 13.7032H9.95871C7.42364 13.7032 6.38456 14.4894 5.92766 17.1274L5.1419 21.5917C5.0659 22.0733 5.0157 22.4793 5.0157 22.8342C5.0157 24.1785 5.75079 24.5085 7.98141 24.5085H14.9017C17.0057 24.5085 17.6896 23.9504 17.9181 22.6821L18.2479 20.8055H11.3022L11.86 17.6855H23.0136Z" fill="#808689" />
@@ -23,7 +23,7 @@
             </template>
           </nav>
         
-        <nav class="text-center pt-4 md:pt-4  md:flex md:flex-row md:grow justify-center lg:flex-row lg:justify-start gap-4 border-t border-secondary md:border-t-0 ">
+        <nav class="text-center pt-4 md:pt-0 md:justify-end md:flex md:flex-row md:grow justify-center lg:flex-row gap-4 border-t border-secondary md:border-t-0 ">
           <template v-for="item in subnavigation">
             <a class="inline-flex p-2 md:p-0 link link-hover text-primary opacity-30 hover:opacity-100">{{ item.name }}</a>
             <!-- <span class="opacity-10 hidden lg:inline">•</span> -->

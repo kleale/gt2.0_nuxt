@@ -19,11 +19,11 @@
 
 <script setup lang="ts">
 useHead({
-  bodyAttrs: {
-    class: 'h-full',
-  },
-  htmlAttrs: {
-    class: 'h-full',
-  },
+  // bodyAttrs: {
+  //   class: 'h-full',
+  // },
+  // htmlAttrs: {
+  //   class: 'h-full',
+  // },
 });
 </script>
