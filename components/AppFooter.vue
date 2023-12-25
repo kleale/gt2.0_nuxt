@@ -23,7 +23,7 @@
             </template>
           </nav>
         
-        <nav class="text-center pt-4 md:flex md:flex-row md:grow justify-center lg:flex-row lg:justify-start gap-4 border-t border-secondary md:border-t-0 ">
+        <nav class="text-center pt-4 md:pt-4  md:flex md:flex-row md:grow justify-center lg:flex-row lg:justify-start gap-4 border-t border-secondary md:border-t-0 ">
           <template v-for="item in subnavigation">
             <a class="inline-flex p-2 md:p-0 link link-hover text-primary opacity-30 hover:opacity-100">{{ item.name }}</a>
             <!-- <span class="opacity-10 hidden lg:inline">•</span> -->

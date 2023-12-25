@@ -6,11 +6,12 @@
     <Tabs />
     <BlockLayout header="Best matches of the day">
       <template v-slot:header-extra>
-        <a href="" class="tooltip p-2 text-secondary hover:text-white" data-tip="Refresh">
+        <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
           <IconRefresh class="w-6" filled :fontControlled="false" />
         </a>
         <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-        <a href="" class="tooltip p-2 text-secondary hover:text-white" data-tip="Show the score">
+        <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" 
+          data-tip="Show the score">
           <IconScore class="w-6" filled :fontControlled="false" />
         </a>
         <div class="divider divider-horizontal m-0 h-6 self-center"></div>
@@ -21,11 +22,12 @@
             </a>
           </template>
         </div>
-        <div class="dropdown dropdown-end md:hidden">
-          <div role="button" class="btn btn-xs text-secondary rounded hover:text-primary">
+        <div class="dropdown md:hidden">
+          <div tabindex="0" role="button" class="text-secondary hover:text-primary btn btn-sm btn-ghost">
             <component :is="games[0].logo" :fontControlled="false" class="w-5" />
+            <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048"><path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path></svg>
           </div>
-          <ul class="dropdown-content z-[2] menu p-2 shadow bg-base-100 rounded-box w-22">
+          <ul tabindex="0" class="dropdown-content z-[2] menu p-2 shadow bg-base-100 rounded-box w-22">
             <template v-for="(game, index) in games">
               <li>
                 <a href="" class="tooltip p-2 text-secondary hover:text-white" :data-tip="game.name">
@@ -114,6 +116,11 @@ const games = [
     logo: Pubg,
   },
 ];
+
+const activeScoreMode = ref(false)
+const setActiveScoreMode = () => {
+  activeScoreMode.value = !activeScoreMode.value
+}
 </script>
 
 <style scoped></style>
