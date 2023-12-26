@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  isCompact: boolean;
+  isCompact?: boolean;
 }>();
 
 import { Dota2, CS2, Hs, Lol, Ow, Pubg, Fortnite } from "@/assets/img/icons/";

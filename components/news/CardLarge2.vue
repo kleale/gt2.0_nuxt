@@ -3,7 +3,7 @@
     <figure><img :src="data.src" alt="news" class="opacity-25" style="width: 100%" /></figure>
     <div class="justify-end p-6 pb-0 absolute bottom-0">
       <div class="flex flex-col gap-2">
-        <div><span data-v-ac29a604="" class="bg-[#DDBE9A] text-gray-900 text-xs font-semibold px-1 rounded uppercase">Interview</span></div>
+        <div><span class="bg-[#DDBE9A] text-gray-900 text-xs font-semibold px-1 rounded uppercase">Interview</span></div>
         <h3 class="card-title grow text-white text-lg leading-5">{{data.name}}</h3>
         <!-- <p>Click the button to listen on Spotiwhy app.</p> -->
         <div class="flex items-end content-end justify-end -mr-6">

@@ -6,37 +6,37 @@
           <BannersTopMobile />
           <!-- <NewsCardLarge /> -->
           <NewsCarousel />
-          <Tabs />
-          <Blocklayout header="Best matches of the day">
+          <IndexMobileTabs />
+          <CommonBlocklayout header="Best matches of the day">
             <template v-slot:header-extra>
-              <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
-                <IconRefresh class="w-6" filled :fontControlled="false" />
-              </a>
-              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-              <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
-                <IconScore class="w-6" filled :fontControlled="false" />
-              </a>
-              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-              <CommonGameslinks />
+                <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
+                  <IconRefresh class="w-6" filled :fontControlled="false" />
+                </a>
+                <div class="divider divider-horizontal m-0 h-6 self-center"></div>
+                <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
+                  <IconScore class="w-6" filled :fontControlled="false" />
+                </a>
+                <div class="divider divider-horizontal m-0 h-6 self-center"></div>
+                <CommonGamelinks />
             </template>
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
             </template>
-          </Blocklayout>
+          </CommonBlocklayout>
           <div class="flex justify-center">
-            <Pagination />
+            <CommonPagination />
           </div>
         </div>
       </div>
       <div class="col-span-12 md:col-span-2 gap-5">
         <div class="flex flex-col gap-5">
-          <Textblock>
+          <CommonTextblock>
             <template v-slot:header-extra> Stream and video, teams and players, statistics and analytics </template>
             On GT you can find all <a href="/">Dota 2</a> and CS:GO matches, watch streams and videos, look for detailed statistics on the teams, players and games, make predictions for the games and sell subscriptions for them. Follow Esports with GT!
-          </Textblock>
-          <Blocklayout header="News">
+          </CommonTextblock>
+          <CommonBlocklayout header="News">
             <template v-slot:header-extra>
-              <CommonGameslinks :isCompact="true" />
+              <CommonGamelinks :isCompact="true" />
             </template>
             <NewsCardLarge2 :data="news[0]" />
             <BannersB330 />
@@ -45,7 +45,7 @@
                 <NewsBlock :data="newsItem" />
               </template>
             </div>
-          </Blocklayout>
+          </CommonBlocklayout>
         </div>
       </div>
     </div>
