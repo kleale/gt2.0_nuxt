@@ -41,6 +41,7 @@
               <CommonGamesLinks :isCompact="true"/>
             </template>
             <NewsCardLarge2 :data="news"/>
+            <BannersB330/>
           </BlockLayout>
         </div>
       </div>

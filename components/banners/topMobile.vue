@@ -1,5 +1,5 @@
 <template>
-  <img :src="bannerMobile" alt="topb" style="width: 100%" class="mob md:hidden" />
+  <a href="/" class="topmob md:hidden"><img :src="bannerMobile" alt="topb" style="width: 100%" /></a>
 </template>
 
 <script setup lang="ts">
