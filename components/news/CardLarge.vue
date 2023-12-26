@@ -14,13 +14,6 @@
 </template>
 <script setup lang="ts">
 const props = defineProps<{
-  data: {name:string, id:number, src:string, game:any}
+  data: {name:string, id:number, src:string, game:any, isImg?: boolean, date?: string}
 }>()
 </script>
-<style scoped>
-.nuxt-icon {
-  width: 2rem;
-  height: 2rem;
-  color: #656571;
-}
-</style>

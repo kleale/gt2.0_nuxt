@@ -1,52 +1,49 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
-    <div class="grid grid-cols-7 gap-5">
-      <div class="col-span-12 md:col-span-5">
-        <div class="flex flex-col gap-5">
-          <BannersTopMobile />
-          <!-- <NewsCardLarge /> -->
-          <NewsCarousel />
-          <Tabs />
-          <Blocklayout header="Best matches of the day">
-            <template v-slot:header-extra>
-              <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
-                <IconRefresh class="w-6" filled :fontControlled="false" />
-              </a>
-              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-              <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
-                <IconScore class="w-6" filled :fontControlled="false" />
-              </a>
-              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-              <CommonGameslinks />
-            </template>
-            <template v-for="(match, index) in matches">
-              <MatchesRow :match="match" />
-            </template>
-          </Blocklayout>
-          <div class="flex justify-center">
-            <Pagination />
-          </div>
+    <div class="flex flex-col gap-5">
+      <BannersTopMobile />
+      <!-- <NewsCardLarge /> -->
+      <NewsCarousel />
+      <Tabs />
+      <div id="tap1">
+        <Blocklayout header="Best matches of the day">
+          <template v-slot:header-extra>
+            <a class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
+              <IconRefresh class="w-6" filled :fontControlled="false" />
+            </a>
+            <div class="divider divider-horizontal m-0 h-6 self-center"></div>
+            <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-2 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
+              <IconScore class="w-6" filled :fontControlled="false" />
+            </a>
+            <div class="divider divider-horizontal m-0 h-6 self-center"></div>
+            <CommonGameslinks />
+          </template>
+          <template v-for="(match, index) in matches">
+            <MatchesRow :match="match" />
+          </template>
+        </Blocklayout>
+        <div class="flex justify-center">
+          <Pagination />
         </div>
       </div>
-      <div class="col-span-12 md:col-span-2 gap-5">
-        <div class="flex flex-col gap-5">
-          <Textblock>
-            <template v-slot:header-extra> Stream and video, teams and players, statistics and analytics </template>
-            On GT you can find all <a href="/">Dota 2</a> and CS:GO matches, watch streams and videos, look for detailed statistics on the teams, players and games, make predictions for the games and sell subscriptions for them. Follow Esports with GT!
-          </Textblock>
-          <Blocklayout header="News">
-            <template v-slot:header-extra>
-              <CommonGameslinks :isCompact="true" />
+
+      <div id="tab2">
+        <Textblock>
+          <template v-slot:header-extra> Stream and video, teams and players, statistics and analytics </template>
+          On GT you can find all <a href="/">Dota 2</a> and CS:GO matches, watch streams and videos, look for detailed statistics on the teams, players and games, make predictions for the games and sell subscriptions for them. Follow Esports with GT!
+        </Textblock>
+        <Blocklayout header="News">
+          <template v-slot:header-extra>
+            <CommonGameslinks :isCompact="true" />
+          </template>
+          <NewsCardLarge2 :data="news[0]" />
+          <BannersB330 />
+          <div class="p-4">
+            <template v-for="(newsItem, index) in news">
+              <NewsBlock :data="newsItem" />
             </template>
-            <NewsCardLarge2 :data="news[0]" />
-            <BannersB330 />
-            <div class="p-4">
-              <template v-for="(newsItem, index) in news">
-                <NewsBlock :data="newsItem" />
-              </template>
-            </div>
-          </Blocklayout>
-        </div>
+          </div>
+        </Blocklayout>
       </div>
     </div>
     <div class="flex flex-col gap-5 pt-5">
