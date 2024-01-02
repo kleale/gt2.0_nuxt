@@ -1,14 +1,31 @@
-
 import type { EventsCard } from '#build/components';
 <template>
   <CommonBlocklayout header="Tournaments">
     <template v-slot:header-extra>
       <CommonGamelinks />
     </template>
-    <div class="flex flex-row gap-5 p-5">
+    <div class="flex flex-col gap-5 bg-[#18181d]">
+      <div class="flex flex-row gap-5 p-5 bg-[#18181d]">
+        <div class="carousel rounded-box">
+          <template v-for="(event, index) in events">
+            <div class="carousel-item">
+              <EventsCard :data="event" />
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div class="flex flex-1 flex-col border-r border-r-slate-800">
         <template v-for="(event, index) in events">
-            <EventsCard :data="event"/>
+          <EventsRow :event="event"></EventsRow>
         </template>
+      </div>
+      <div class="flex flex-1 flex-col">
+        <template v-for="(event, index) in events">
+          <EventsRow :event="event"></EventsRow>
+        </template>
+      </div>
     </div>
   </CommonBlocklayout>
   <!-- <div class="flex justify-center">
@@ -23,38 +40,55 @@ import { Dota2, CS2, Hs, Lol, Ow, Pubg, Fortnite } from "@/assets/img/icons/";
 const events = [
   {
     id: 0,
-    name: 'GGWP Dragon S2',
+    name: "ESL One Birmingham 2024",
     game: Dota2,
-    price: '$20,000',
-    date: "January 13, 2024",
+    price: "$100K",
+    date: "April 22, 2024",
     time: "11:34",
     isLive: true,
-    map: 1,
-    eIcon: "https://escorenews.com/media/event/_60/e8382.webp",
-    src: 'https://game-tournaments.com/media/tournament/e8638.webp'
-  },{
-    id: 0,
-    name: 'GGWP Dragon S2',
+    eIcon: "https://escorenews.com/media/event/_120/e8564.webp",
+    src: "https://escorenews.com/media/tournament/_300/e8564.webp",
+  },
+  {
+    id: 1,
+    name: "DreamLeague Season 22",
     game: Dota2,
-    price: '$20,000',
+    price: "$1M",
+    date: "February 13, 2024",
+    time: "11:34",
+    isLive: false,
+    eIcon: "https://escorenews.com/media/event/_120/e8562.webp",
+    src: "https://escorenews.com/media/tournament/_300/e8562.webp",
+  },
+  {
+    id: 2,
+    name: "ESB Liga 2024 Tour 2",
+    game: Dota2,
+    price: "$500K",
     date: "January 13, 2024",
     time: "11:34",
-    isLive: true,
-    map: 1,
-    eIcon: "https://escorenews.com/media/event/_60/e8382.webp",
-    src: 'https://game-tournaments.com/media/tournament/e8638.webp'
-  },{
-    id: 0,
-    name: 'GGWP Dragon S2',
-    game: Dota2,
-    price: '$20,000',
-    date: "January 13, 2024",
+    isLive: false,
+    eIcon: "https://escorenews.com/media/event/_120/e8659.webp",
+    src: "https://escorenews.com/media/tournament/_300/e8659.webp",
+  },
+  {
+    id: 3,
+    name: "Winline Insight Season 4",
+    game: Lol,
+    price: "$10K",
+    date: "10 ноября - 24 декабря 2023",
     time: "11:34",
-    isLive: true,
-    map: 1,
-    eIcon: "https://escorenews.com/media/event/_60/e8382.webp",
-    src: 'https://game-tournaments.com/media/tournament/e8638.webp'
+    isLive: false,
+    eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
+    src: "https://escorenews.com/media/tournament/_300/e8527.webp",
   },
 ];
 </script>
-<style scoped></style>
+<style scoped>
+.carousel {
+  gap: 25px;
+
+  .carousel-item {
+  }
+}
+</style>
