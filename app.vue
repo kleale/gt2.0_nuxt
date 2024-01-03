@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="gtTheme">
+
     <AppHeader />
     <NuxtLayout>
       <NuxtPage />
@@ -10,5 +10,5 @@
         </div>
       </div>
     </NuxtLayout>
-  </div>
+
 </template>

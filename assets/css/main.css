@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   background: #171717;
-}
+} */
 body {
   position: relative;
   /* background: url('~/assets/img/bg.jpg') 0% 50% repeat #171717; */

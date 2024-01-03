@@ -2,7 +2,7 @@
   <header class="navbar flex justify-center text-primary sticky top-0 z-50 bg-base-100 bg-opacity-60 backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)] shadow-sm">
     <div class="flex w-full max-w-7xl self-center">
       <div class="navbar-start lg:w-auto">
-        <a href="/" class="px-3 h-8 logo flex">
+        <a href="/" class="px-3 h-8 logo flex text-primary">
           <GTlogo2 class="w-17" alt="GTlogo" :fontControlled="false" />
         </a>
       </div>

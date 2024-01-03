@@ -8,7 +8,7 @@
 
             <ul v-if="item.childrens.length" class="menu menu-vertical lg:menu-horizontal submenu p-0 m-0 pr-4">
               <li v-for="links in item.childrens">
-                <a :href="links.href" class="hover:text-primary">{{ links.name }}</a>
+                <a :href="links.href" class="text-base-content hover:text-primary">{{ links.name }}</a>
               </li>
             </ul>
 
@@ -109,7 +109,6 @@ const navigation = [
     }
     .current .submenu {
       display: flex;
-      color: #fff;
     }
   }
 }

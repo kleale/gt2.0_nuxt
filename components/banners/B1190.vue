@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="b1190"><img :src="bannerMobile" alt="topb" style="width: 100%" /></a>
+  <a href="/" class="b1190 rounded"><img :src="bannerMobile" alt="topb" style="width: 100%" class="rounded"/></a>
 </template>
 
 <script setup lang="ts">

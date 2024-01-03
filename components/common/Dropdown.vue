@@ -1,6 +1,6 @@
 <template>
   <details class="dropdown flex flex-1">
-    <summary id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="flex text-base-content bg-zinc-800 hover:bg-sky-950 focus:ring-1 cursor-pointer focus:outline-none focus:primary rounded-md text-sm px-2 py-1 text-center inline-flex items-center" type="button">
+    <summary id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="flex text-base-content bg-zinc-800 hover:bg-sky-950 focus:ring-1 cursor-pointer focus:outline-none focus:primary rounded-md text-sm px-2 py-1 text-center items-center" type="button">
       <span class="flex flex-1">{{ drop.button }}</span>
       <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />

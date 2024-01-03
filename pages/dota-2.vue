@@ -1,9 +1,11 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
+    <MatchesStreamBlock />
     <BannersB1190 />
-    <div class="grid grid-cols-7 gap-5 pt-5">
+
+    <div class="grid grid-cols-7 gap-3 pt-3">
       <div class="col-span-12 md:col-span-5">
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-3">
           <CommonBlocklayout header="Upcoming Dota 2 matches">
             <template v-slot:header-extra>
               <a class="tooltip p-1 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
@@ -15,10 +17,10 @@
               </a>
             </template>
             <div class="p-2 flex gap-3">
-              <CommonDropdown :drop="drop1"/>
-              <CommonDropdown :drop="drop2"/>
-              <CommonDropdown :drop="drop3"/>
-              <CommonDropdown :drop="drop4"/>
+              <CommonDropdown :drop="drop1" />
+              <CommonDropdown :drop="drop2" />
+              <CommonDropdown :drop="drop3" />
+              <CommonDropdown :drop="drop4" />
             </div>
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
@@ -39,10 +41,10 @@
               </a>
             </template>
             <div class="p-2 flex gap-3">
-              <CommonDropdown :drop="drop1"/>
-              <CommonDropdown :drop="drop2"/>
-              <CommonDropdown :drop="drop3"/>
-              <CommonDropdown :drop="drop4"/>
+              <CommonDropdown :drop="drop1" />
+              <CommonDropdown :drop="drop2" />
+              <CommonDropdown :drop="drop3" />
+              <CommonDropdown :drop="drop4" />
             </div>
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
@@ -65,8 +67,8 @@
           </CommonTextblock>
         </div>
       </div>
-      <div class="col-span-12 md:col-span-2 gap-5">
-        <div class="flex flex-col gap-5">
+      <div class="col-span-12 md:col-span-2">
+        <div class="flex flex-col gap-3">
           <CommonBlocklayout header="News">
             <template v-slot:header-extra>
               <CommonGamelinks :isCompact="true" />
@@ -94,7 +96,6 @@
     </div>
     <div class="flex flex-col gap-5 pt-5">
       <BannersB1190 />
-      <BannersSignUp />
     </div>
   </div>
 </template>
@@ -206,48 +207,60 @@ const comments = [
 ];
 
 const drop1 = {
-    button: 'Tournament',
-    items: [{
-        label: 'label 0',
-        id: 0
-    },{
-        label: 'label 1',
-        id: 1
-    }]
-}
+  button: "Tournament",
+  items: [
+    {
+      label: "label 0",
+      id: 0,
+    },
+    {
+      label: "label 1",
+      id: 1,
+    },
+  ],
+};
 
 const drop2 = {
-    button: 'Stage',
-    items: [{
-        label: 'label 0',
-        id: 0
-    },{
-        label: 'label 1',
-        id: 1
-    }]
-}
+  button: "Stage",
+  items: [
+    {
+      label: "label 0",
+      id: 0,
+    },
+    {
+      label: "label 1",
+      id: 1,
+    },
+  ],
+};
 
 const drop3 = {
-    button: 'Round',
-    items: [{
-        label: 'label 0',
-        id: 0
-    },{
-        label: 'label 1',
-        id: 1
-    }]
-}
+  button: "Round",
+  items: [
+    {
+      label: "label 0",
+      id: 0,
+    },
+    {
+      label: "label 1",
+      id: 1,
+    },
+  ],
+};
 
 const drop4 = {
-    button: 'Team',
-    items: [{
-        label: 'label 0',
-        id: 0
-    },{
-        label: 'label 1',
-        id: 1
-    }]
-}
+  button: "Team",
+  items: [
+    {
+      label: "label 0",
+      id: 0,
+    },
+    {
+      label: "label 1",
+      id: 1,
+    },
+  ],
+};
 
 import IconRefresh from "@/assets/img/icons/refresh.svg";
 import IconScore from "@/assets/img/icons/score.svg";

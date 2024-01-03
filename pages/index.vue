@@ -1,14 +1,14 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
-    <div class="grid grid-cols-7 gap-5">
+    <div class="grid grid-cols-7 gap-3">
       <div class="col-span-12 md:col-span-5">
         <div class="flex flex-col gap-5">
           <EventsBlock/>
           <MatchesBlock/>
         </div>
       </div>
-      <div class="col-span-12 md:col-span-2 gap-5">
-        <div class="flex flex-col gap-5">
+      <div class="col-span-12 md:col-span-2">
+        <div class="flex flex-col gap-3">
           <CommonTextblock>
             <template v-slot:header-extra> Stream and video, teams and players, statistics and analytics </template>
             On GT you can find all <a href="/">Dota 2</a> and CS:GO matches, watch streams and videos, look for detailed statistics on the teams, players and games, make predictions for the games and sell subscriptions for them. Follow Esports with GT!
