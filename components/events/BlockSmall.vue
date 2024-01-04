@@ -8,23 +8,11 @@ import type { EventsCard } from '#build/components';
       <div class="flex flex-row gap-5 p-5 bg-[#18181d]">
         <div class="carousel rounded">
           <template v-for="(event, index) in events">
-            <div class="carousel-item md:w-[240px]">
+            <div class="carousel-item md:w-[260px]">
               <EventsCard :data="event" />
             </div>
           </template>
         </div>
-      </div>
-    </div>
-    <div class="flex flex-row">
-      <div class="flex flex-1 flex-col border-r border-r-slate-800">
-        <template v-for="(event, index) in events">
-          <EventsRow :event="event"></EventsRow>
-        </template>
-      </div>
-      <div class="flex flex-1 flex-col">
-        <template v-for="(event, index) in events">
-          <EventsRow :event="event"></EventsRow>
-        </template>
       </div>
     </div>
   </CommonBlocklayout>

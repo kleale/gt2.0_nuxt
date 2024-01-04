@@ -6,69 +6,17 @@
     <div class="grid grid-cols-7 gap-3 pt-3">
       <div class="col-span-12 md:col-span-5">
         <div class="flex flex-col gap-3">
-          <CommonBlocklayout header="Upcoming Dota 2 matches">
-            <template v-slot:header-extra>
-              <a class="tooltip p-1 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
-                <IconRefresh class="w-6" filled :fontControlled="false" />
-              </a>
-              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-              <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-1 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
-                <IconScore class="w-6" filled :fontControlled="false" />
-              </a>
-            </template>
-            <div class="p-2 flex gap-3">
-              <CommonDropdown :drop="drop1" />
-              <CommonDropdown :drop="drop2" />
-              <CommonDropdown :drop="drop3" />
-              <CommonDropdown :drop="drop4" />
-            </div>
-            <template v-for="(match, index) in matches">
-              <MatchesRow :match="match" />
-            </template>
-          </CommonBlocklayout>
-          <div class="flex justify-center">
-            <CommonPagination />
-          </div>
-
-          <CommonBlocklayout header="Last Dota 2 matches">
-            <template v-slot:header-extra>
-              <a class="tooltip p-1 text-secondary hover:text-white hover:cursor-pointer" data-tip="Refresh">
-                <IconRefresh class="w-6" filled :fontControlled="false" />
-              </a>
-              <div class="divider divider-horizontal m-0 h-6 self-center"></div>
-              <a @click="setActiveScoreMode()" :class="activeScoreMode ? 'text-white' : ''" class="tooltip p-1 text-secondary hover:text-white hover:cursor-pointer" data-tip="Show the score">
-                <IconScore class="w-6" filled :fontControlled="false" />
-              </a>
-            </template>
-            <div class="p-2 flex gap-3">
-              <CommonDropdown :drop="drop1" />
-              <CommonDropdown :drop="drop2" />
-              <CommonDropdown :drop="drop3" />
-              <CommonDropdown :drop="drop4" />
-            </div>
-            <template v-for="(match, index) in matches">
-              <MatchesRow :match="match" />
-            </template>
-          </CommonBlocklayout>
-          <div class="flex justify-center">
-            <CommonPagination />
-          </div>
-
-          <CommonTextblock>
-            <template v-slot:header-extra>Does Dota 2 have esports? </template>
-            <p>Dota 2 is one of the biggest esports titles on the planet. The game features multiple LAN esports tournaments with teams worldwide, official DPC leagues in six regions, and numerous online events for teams of all caliber: from established pro squads to the amateur stacks of friends, having fun in competitive matches and getting their first Dota 2 esports earnings.</p>
-            <p>Millions of fans worldwide watch the esports Dota 2 events, which are held in many different countries and regions, from Southeast Asia to South America. It’s also one of the oldest titles still active in esports. The first Dota esports matches were played in its WarCraft III mod and predecessor, DotA AllStars, with events going back to 2005.</p>
-            <h3 class="text-xl text-white grow py-3 opacity-60">Why is Dota 2 so popular in esports?</h3>
-            <p>The highly competitive esports Dota 2 scene attracts a lot of players and viewers. Fans follow their favorite players and teams in esports, watch weekly matches in DPC, and support their teams at events. Each tournament and each match can be very unpredictable, allowing the fans to feel all ranges of emotions, like excitement and happiness, when their team makes a deep run in another esports Dota 2 event.</p>
-            <p>The opportunity to prove you are the best Dota 2 player in the world and a life-changing prize pool make The International the dream of every Dota 2 player. This so-called “Dota 2 World Championship”, held annually, has millions worldwide supporting their favorite esports teams and players and is followed even by fans of other esports titles.</p>
-            <h3 class="text-xl text-white grow py-3 opacity-60">Is Dota 2 still big?</h3>
-            <p>While Dota 2 growth slowed down over the years, it’s still one of the biggest esports titles in the world. Just in 2022 alone, Dota 2 esports tournaments had an overall prize pool of $40 million, with hundreds of thousands of fans worldwide following the events. With an established DPC system, Dota 2 is here to stay in esports.</p>
-            <p>Dota 2 also has a huge player base, with the game constantly remaining as one of the most-played titles on Steam. For example, during the 2022 peak player numbers, more than a million players were in the game simultaneously. And its average daily online player numbers almost every month cross the 400,000 mark.</p>
-          </CommonTextblock>
+          
+          
         </div>
       </div>
       <div class="col-span-12 md:col-span-2">
         <div class="flex flex-col gap-3">
+          <CommonTextblocksmall>
+            <template v-slot:header-extra>DOTA 2 Matches </template>
+            <p>Released in 2011, Dota 2 quickly became one of the biggest multiplayer games worldwide, and still goes strong to this day, including a big esports scene. The game is played in matches, with many formats and types available for fans. Dota 2 matches are one of the most popular esports disciplines, and fans from all over the world follow them.</p>
+          </CommonTextblocksmall>
+          <BannersB330 />
           <CommonBlocklayout header="News">
             <template v-slot:header-extra>
               <CommonGamelinks :isCompact="true" />
@@ -80,15 +28,9 @@
               </template>
             </div>
           </CommonBlocklayout>
-          <BannersB330 />
           <CommonBlocklayout header="Prize pool of current Events">
             <template v-for="(event, index) in events">
               <EventsSmallRow :event="event" />
-            </template>
-          </CommonBlocklayout>
-          <CommonBlocklayout header="Comments">
-            <template v-for="(comment, index) in comments">
-              <CommentsSmallRow :comment="comment" />
             </template>
           </CommonBlocklayout>
         </div>
@@ -147,7 +89,8 @@ const events = [
     isLive: false,
     eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
     src: "https://escorenews.com/media/tournament/_300/e8527.webp",
-  },{
+  },
+  {
     id: 0,
     name: "ESL One Birmingham 2024",
     game: Dota2,
@@ -190,7 +133,8 @@ const events = [
     isLive: false,
     eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
     src: "https://escorenews.com/media/tournament/_300/e8527.webp",
-  },{
+  },
+  {
     id: 3,
     name: "Winline Insight Season 4",
     game: Lol,
@@ -200,7 +144,8 @@ const events = [
     isLive: false,
     eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
     src: "https://escorenews.com/media/tournament/_300/e8527.webp",
-  },{
+  },
+  {
     id: 3,
     name: "Winline Insight Season 4",
     game: Lol,
@@ -266,7 +211,8 @@ const comments = [
     time: "11-00",
     comment: "Буду комментить этот матч - заходите кто хочет)",
     name: "Ezio",
-  },{
+  },
+  {
     id: 0,
     match: "SNG vs yK",
     game: Dota2,
@@ -275,7 +221,8 @@ const comments = [
     time: "11-00",
     comment: "Буду комментить этот матч - заходите кто хочет)",
     name: "Ezio",
-  },{
+  },
+  {
     id: 0,
     match: "SNG vs yK",
     game: Dota2,

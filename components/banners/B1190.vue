@@ -3,6 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import bannerMobile from "@/assets/img/b1190.png";
+import bannerMobile from "/img/b1190.png";
 </script>
 <style scoped></style>

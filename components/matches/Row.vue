@@ -6,8 +6,8 @@
       </div>
       <div class="flex grow gap-1 md:gap-5 relative md:px-1">
         <div class="flex grow flex-1 items-center gap-2 md:gap-5 flex-row-reverse md:flex-row-reverse md:items-center md:justify-start">
-          <a href="#" class="flex h-5 w-5">
-            <img class="h-5 max-w-full" :src="match.t1Icon" :alt="match.t1" />
+          <a href="#" class="flex h-6 w-6">
+            <img class="h-6 max-w-full" :src="match.t1Icon" :alt="match.t1" />
           </a>
           <a href="#" class="flex text-right text-xs md:text-base text-white text-[13px] leading-4 text-ellipsis overflow-hidden md:w-fit"> {{ match.t1 }}</a>
         </div>

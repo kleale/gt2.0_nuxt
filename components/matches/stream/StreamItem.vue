@@ -1,22 +1,30 @@
 <template>
-  <div class="flex flex-row items-center gap-2 bg-neutral rounded">
+  <div :class="stream.isActive ? 'isActive bg-[#172429] shadow-cyan-950' : ''" 
+    class="flex flex-row items-center gap-3 bg-neutral rounded cursor-pointer transition-all shadow hover:bg-[#172429] hover:shadow-slate-950">
     <picture class="rounded relative overflow-hidden h-12 min-w-fit">
       <span class="absolute bg-black text-[10px] text-primary text-center rounded-full block leading-3 h-4 w-4 top-1 left-1">en</span>
       <source :srcset="stream.streamSrc" type="image/webp" />
       <img class="h-12 w-12 rounded" loading="lazy" :src="stream.streamSrc" alt="aferaTV" />
     </picture>
-    <div class="flex flex-col gap-1 content-center text-xs text-white">
+    <div class="flex flex-col flex-1 gap-1 content-center text-xs text-white">
       <div class="line-clamp-1">{{ stream.name }}</div>
-      <div class="flex gap-2 items-center content-center"><ClockIcon class="text-primary" filled /> {{ stream.views }}</div>
+      <div class="flex gap-1 items-center content-center"><Eye class="text-primary" filled /> {{ stream.views }}</div>
+    </div>
+    <div class="flex flex-col content-center text-base-content text-lg pr-2">
+      <!-- <Circledashed class="text-base-content text-lg" filled /> -->
+      <component :is="stream.isActive ? Circlecheck : Circledashed" :fontControlled="false" filled class="w-6" :class="stream.isActive ? 'text-primary' : ''"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ClockIcon from "@/assets/img/icons/clock.svg";
+import Circlecheck from "@/assets/img/icons/circlecheck.svg";
+import Circledashed from "@/assets/img/icons/circledashed.svg";
+import Eye from "@/assets/img/icons/eye.svg";
 
 interface IStream {
   id: number;
+  isActive: boolean;
   streamSrc: string;
   name: string;
   views: string;
@@ -40,3 +48,20 @@ const props = defineProps<{
   stream: IStream;
 }>();
 </script>
+
+<style scoped>
+.isActive {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    display: block;
+    height: 100%;
+    width: 5px;
+    border-radius: 5px;
+    background: #91cdd7;
+  }
+}
+</style>

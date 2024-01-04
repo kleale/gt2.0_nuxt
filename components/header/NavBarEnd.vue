@@ -18,8 +18,8 @@
         <li><a href="/">Index</a></li>
         <li><a href="/indexmobile/">Index Mob</a></li>
         <li><a href="/dota-2/">Game</a></li>
-        <li><a href="/dota-2/">Match List</a></li>
-        <li><a href="/dota-2/">Match</a></li>
+        <li><a href="/matches/">Match List</a></li>
+        <li><a href="/match/">Match</a></li>
         <li><a href="/dota-2/">Event List</a></li>
         <li><a href="/dota-2/">Event</a></li>
         <li><a href="/text/">Text</a></li>

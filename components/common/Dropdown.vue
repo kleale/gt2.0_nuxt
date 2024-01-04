@@ -7,10 +7,10 @@
       </svg>
     </summary>
     <!-- Dropdown menu -->
-    <ul class="text-sm z-10 mt-1 rounded-box shadow menu dropdown-content w-52 bg-gray-800 divide-gray-600" aria-labelledby="dropdownDividerButton">
+    <ul class="menu text-sm z-10 mt-1 p-1 rounded shadow dropdown-content w-48 bg-zinc-800 divide-gray-600" aria-labelledby="dropdownDividerButton">
       <template v-for="(item, index) in drop.items">
         <li>
-          <a href="#" class="block px-2 py-2 hover:bg-gray-100 dark:hover:bg-zinc-600 dark:hover:text-white">Item</a>
+          <a href="#" class="block px-2 py-1 hover:bg-zinc-700 hover:text-white">Item</a>
         </li>
       </template>
     </ul>

@@ -1,12 +1,10 @@
 <template>
-  <a href="#" class="flex flex-col text-sm gap-1 text-primary p-2">
+  <a href="#" class="flex flex-col text-sm gap-1 text-primary p-2 border-b border-gray-800 last:border-0">
     <div class="flex line-clamp-1">
       <span class="font-bold">{{ comment.match }}</span> &nbsp;&nbsp;•&nbsp;&nbsp;{{ comment.event }}
     </div>
     <div class="text-sm text-base-content">
-      <span class="font-bold text-primary">{{ comment.name }}</span
-      >:&nbsp; {{ comment.comment }} •
-      {{ comment.date }}
+      <span class="font-bold text-primary">{{ comment.name }}</span>:&nbsp; {{ comment.comment }} • {{ comment.date }}
     </div>
   </a>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="textBlock text-base p-12">
+  <div class="textBlock text-sm p-6">
     <h2><slot name="header-extra" /></h2>
     <p><slot /></p>
     <slot name="header-footer" />
@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
   background-color: #000e17;
   background-size: cover;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 
   h2 {
     color: rgba(255, 255, 255, 0.7);
