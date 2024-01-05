@@ -1,3 +1,4 @@
+
 <template>
   <div class="navbar-end gap-2 flex px-3 lg:px-4 items-center justify-end content-end">
     <!-- dev -->
@@ -15,11 +16,11 @@
         </svg>
       </div>
       <ul tabindex="0" class="dropdown-content z-[1] menu p-2 text-xs shadow bg-base-100 rounded-box w-40">
-        <li><a href="/">Index</a></li>
-        <li><a href="/indexmobile/">Index Mob</a></li>
-        <li><a href="/dota-2/">Game</a></li>
-        <li><a href="/matches/">Match List</a></li>
-        <li><a href="/match/">Match</a></li>
+        <li><a href="/" >Index <IconCirclecheck filled/></a></li>
+        <li><a href="/indexmobile/">Index Mob <IconCirclecheck filled/></a></li>
+        <li><a href="/dota-2/">Game <IconCirclecheck filled/></a></li>
+        <li><a href="/matches/">Match List <IconCirclecheck filled/></a></li>
+        <li><a href="/match/">Match <IconCirclecheck filled/></a></li>
         <li><a href="/dota-2/">Event List</a></li>
         <li><a href="/dota-2/">Event</a></li>
         <li><a href="/text/">Text</a></li>
@@ -33,7 +34,7 @@
     </div>
     <!-- .dev -->
     <a href="#" class="btn btn-sm btn-ghost btn-circle mr-1 text-primary hover:bg-primary hover:text-black">
-      <Gift class="h-5 w-auto" alt="Gift" :fontControlled="false" />
+      <IconGift class="h-5 w-auto" alt="Gift" :fontControlled="false" />
     </a>
 
     <button class="btn btn-xs rounded text-primary btn-outline bg-base-300 hover:bg-primary hover:border-primary" v-if="!sign" @click="onSign">Sign&nbsp;up</button>
@@ -98,7 +99,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { Gift } from "@/assets/img/icons/";
+import { IconGift, IconCirclecheck } from "@/assets/img/icons/";
+
 const sign = ref(false);
 const onSign = () => {
   sign.value = true;
@@ -110,7 +112,7 @@ onMounted(() => {
   themeChange(false);
 });
 </script>
-<style scoped>
+<style scoped lang="scss">
 .menu :where(li ul):before {
   display: none;
 }

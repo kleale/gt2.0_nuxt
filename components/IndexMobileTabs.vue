@@ -30,7 +30,7 @@ const menu = [
 ];
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .tabs-boxed {
   padding: 0;
   border-radius: 5px;

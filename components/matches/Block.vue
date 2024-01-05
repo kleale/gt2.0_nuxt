@@ -20,8 +20,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import IconRefresh from "@/assets/img/icons/refresh.svg";
-import IconScore from "@/assets/img/icons/score.svg";
+import { IconRefresh, IconScore} from "@/assets/img/icons/";
 import { Dota2, CS2, Hs, Lol, Ow, Pubg, Fortnite } from "@/assets/img/icons/";
 
 const matches = [

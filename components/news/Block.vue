@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="flex gap-5 py-4 text-white hover:text-primary transition border-b border-gray-800 last:border-0 last:pb-0 first:pt-0">
+  <a href="/" class="flex gap-5 py-4 text-white hover:text-primary transition border-b border-slate-800 last:border-0 last:pb-0 first:pt-0">
     <figure class="rounded" v-if="data.isImg">
         <img :src="data.src" alt="news" class="rounded shadow-xl max-w-[105px]" />
     </figure>
@@ -23,7 +23,7 @@ const props = defineProps<{
   data: { name: string; id: number; src: string; game: any; isImg?: boolean; date: string;};
 }>();
 </script>
-<style scoped>
+<style scoped lang="scss">
 .title{
     color: #FFF;
     font-size: .8rem;

@@ -15,7 +15,7 @@
     </noindex>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .cat_mob_b {
     display: none;
 }

@@ -1,12 +1,12 @@
 <template>
   <div class="textBlock text-sm p-6">
     <h2><slot name="header-extra" /></h2>
-    <p><slot /></p>
+    <slot />
     <slot name="header-footer" />
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .textBlock {
   display: inline-flex;
   flex-direction: column;

@@ -27,7 +27,8 @@ const props = defineProps<{
   data: { name: string; id: number; src: string; eIcon: string;  game: any; price?: string; date?: string };
 }>();
 </script>
-<style scoped>
+
+<style scoped lang="scss">
 .figure {
   background-color: azure;
   padding: 10px;

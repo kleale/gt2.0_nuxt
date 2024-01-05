@@ -6,14 +6,14 @@ export default defineNuxtConfig({
   //     baseURL: process.env.BASE_URL || 'https://kleale.github.io/gt2.0_nuxt/',
   //   },
   // },
-  css: ['~/assets/css/main.css'],
-  modules: ['nuxt-svgo'],
+  css: ["~/assets/css/main.css"],
+  modules: ["nuxt-svgo"],
   postcss: {
     plugins: {
-      'postcss-import': {},
-      'tailwindcss/nesting': {},
+      "postcss-import": {},
+      "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-})
+});

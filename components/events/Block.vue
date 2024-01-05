@@ -4,8 +4,8 @@ import type { EventsCard } from '#build/components';
     <template v-slot:header-extra>
       <CommonGamelinks />
     </template>
-    <div class="flex flex-col gap-5 bg-[#18181d]">
-      <div class="flex flex-row gap-5 p-5 bg-[#18181d]">
+    <div class="flex flex-col gap-5 bg-base-100">
+      <div class="flex flex-row gap-5 p-5">
         <div class="carousel rounded">
           <template v-for="(event, index) in events">
             <div class="carousel-item md:w-[240px]">
@@ -82,7 +82,8 @@ const events = [
   },
 ];
 </script>
-<style scoped>
+
+<style scoped lang="scss">
 .carousel {
   gap: 25px;
 

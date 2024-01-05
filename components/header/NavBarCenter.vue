@@ -29,7 +29,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import GTlogo2 from "@/assets/img/GTlogo2.svg";
-import { Gift, Dota2, CS2, Hs, Lol, Ow } from "@/assets/img/icons/";
+import { Dota2, CS2, Hs, Lol, Ow } from "@/assets/img/icons/";
 
 const sign = ref(false);
 const onSign = () => {
@@ -89,7 +89,7 @@ const navigation = [
 ];
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .navbar-center {
   .gamemenu {
     :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)),

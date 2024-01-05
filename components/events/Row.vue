@@ -1,5 +1,5 @@
 <template>
-  <div :class="event.isLive ? 'isLive' : ''" class="flex border-b border-b-slate-800 odd:bg-gray-800 odd:bg-opacity-10 last:border-0 hover:bg-opacity-10 hover:bg-gray-700">
+  <div :class="event.isLive ? 'isLive' : ''" class="flex border-b border-b-slate-800 odd:bg-slate-800 odd:bg-opacity-10 last:border-0 hover:bg-opacity-10 hover:bg-gray-700">
     <a href="#" class="flex grow items-center gap-5 h-10 text-primary">
       <div class="flex items-start md:items-center pl-4 w-[35px] text-secondary">
         <component :is="event.game" :fontControlled="false" class="w-4 md:w-5" />
@@ -46,7 +46,7 @@ const props = defineProps<{
   event: IEvent;
 }>();
 </script>
-<style scoped>
+<style scoped lang="scss">
 .bg-odd {
   background-color: #23232b;
 }

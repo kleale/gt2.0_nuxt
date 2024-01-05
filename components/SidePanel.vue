@@ -132,7 +132,7 @@ const navigation = [
 ];
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .logo {
   color: #91cdd7;
 }

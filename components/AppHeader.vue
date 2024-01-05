@@ -75,7 +75,7 @@ const navigation = [
 ];
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .navbar-start {
   .logo {
     margin-top: -4px;

@@ -23,7 +23,7 @@
     </noindex>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .br-mobile{
   display: none;
 }

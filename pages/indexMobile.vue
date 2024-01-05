@@ -36,8 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import IconRefresh from "@/assets/img/icons/refresh.svg";
-import IconScore from "@/assets/img/icons/score.svg";
 import { Dota2, CS2, Hs, Lol, Ow, Pubg, Fortnite } from "@/assets/img/icons/";
 import SignUp from "~/components/banners/SignUp.vue";
 const matches = [

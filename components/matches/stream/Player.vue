@@ -1,12 +1,14 @@
 <template>
   <!-- <div ref="twitchVideo" /> -->
   <iframe 
-  class="rounded"
-  src="https://player.twitch.tv/?video=1925395346&parent=http://localhost:3003/" 
-  frameborder="0" 
-  allowfullscreen="true" 
-  muted="true" scrolling="no" height="400" width="100%" >
-  </iframe>
+    class="rounded"
+    src="https://player.twitch.tv/?video=1925395346&parent=http://localhost:3003/" 
+    frameborder="0" 
+    allowfullscreen="true" 
+    muted="true" 
+    scrolling="no" 
+    height="400" 
+    width="100%" />
 </template>
 
 <script setup lang="ts">

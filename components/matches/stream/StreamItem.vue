@@ -8,19 +8,17 @@
     </picture>
     <div class="flex flex-col flex-1 gap-1 content-center text-xs text-white">
       <div class="line-clamp-1">{{ stream.name }}</div>
-      <div class="flex gap-1 items-center content-center"><Eye class="text-primary" filled /> {{ stream.views }}</div>
+      <div class="flex gap-1 items-center content-center"><IconEye class="text-primary" filled /> {{ stream.views }}</div>
     </div>
     <div class="flex flex-col content-center text-base-content text-lg pr-2">
-      <!-- <Circledashed class="text-base-content text-lg" filled /> -->
-      <component :is="stream.isActive ? Circlecheck : Circledashed" :fontControlled="false" filled class="w-6" :class="stream.isActive ? 'text-primary' : ''"/>
+      <!-- <IconCircledashed class="text-base-content text-lg" filled /> -->
+      <component :is="stream.isActive ? IconCirclecheck : IconCircledashed" :fontControlled="false" filled class="w-6" :class="stream.isActive ? 'text-primary' : ''"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Circlecheck from "@/assets/img/icons/circlecheck.svg";
-import Circledashed from "@/assets/img/icons/circledashed.svg";
-import Eye from "@/assets/img/icons/eye.svg";
+import {IconCirclecheck, IconCircledashed, IconEye} from "@/assets/img/icons/";
 
 interface IStream {
   id: number;
@@ -49,7 +47,7 @@ const props = defineProps<{
 }>();
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .isActive {
   position: relative;
 

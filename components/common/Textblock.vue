@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .textBlock {
   display: inline-flex;
   flex-direction: column;

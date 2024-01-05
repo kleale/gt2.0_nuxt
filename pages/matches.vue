@@ -301,8 +301,7 @@ const drop4 = {
   ],
 };
 
-import IconRefresh from "@/assets/img/icons/refresh.svg";
-import IconScore from "@/assets/img/icons/score.svg";
+import { IconRefresh, IconScore} from "@/assets/img/icons/";
 
 const matches = [
   { id: 0, t1: "Astralis", t1Icon: "/img/none/teamNoLogo.svg", t2: "The Mongolz", t2Icon: "https://escorenews.com/media/logo/_60/t5270.webp", game: Dota2, gameId: "1", score: "1:0", date: "Oct 14", time: "11:34", isLive: true, map: 1, event_id: 1, eventName: "ESEA Open Season 47", eIcon: "/img/none/tourNoLogo.svg", type: "BO3" },

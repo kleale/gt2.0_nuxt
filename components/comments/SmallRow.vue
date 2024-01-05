@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="flex flex-col text-sm gap-1 text-primary p-2 border-b border-gray-800 last:border-0">
+  <a href="#" class="flex flex-col text-sm gap-1 text-primary p-2 border-b border-slate-800 last:border-0">
     <div class="flex line-clamp-1">
       <span class="font-bold">{{ comment.match }}</span> &nbsp;&nbsp;•&nbsp;&nbsp;{{ comment.event }}
     </div>
@@ -31,7 +31,7 @@ interface IComment {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .bg-odd {
   background-color: #23232b;
 }
