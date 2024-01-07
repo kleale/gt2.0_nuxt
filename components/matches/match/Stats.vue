@@ -1,11 +1,9 @@
 <template>
-  <div class="flex w-full border border-slate-800 rounded p-2">
-    <div class="w-full h-[350px]">
-      <div id="container" style="height: 350px">
-        <!-- <vue-highcharts type="chart" :options="chartOptions" :redrawOnUpdate="true" :oneToOneUpdate="false"
+  <div class="w-full h-[350px]">
+    <div id="container" style="height: 350px">
+      <!-- <vue-highcharts type="chart" :options="chartOptions" :redrawOnUpdate="true" :oneToOneUpdate="false"
             :animateOnUpdate="true" @rendered="onRender" /> -->
-        <div class="chart" id="chart1" style="height: 350px"></div>
-      </div>
+      <div class="chart" id="chart1" style="height: 350px"></div>
     </div>
   </div>
 </template>

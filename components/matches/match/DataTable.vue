@@ -3,7 +3,7 @@
     <table class="w-full table-fixed text-xs text-left text-base-content">
       <thead class="text-xs text-neutral-content uppercase border-b border-slate-800 bg-block">
         <tr>
-          <th scope="col" class="py-2 px-2 w-[170px]">
+          <th scope="col" class="py-3 px-2 w-[170px]">
             <div class="flex items-center gap-2">
               <a href="#" class="flex h-7 w-9 justify-center">
                 <img class="h-7 w-7" src="/img/none/teamNoLogo.svg" alt="teamName" />
@@ -11,17 +11,17 @@
               <a href="#" class="flex text-right text-xs text-red-400 leading-4"> Moon Team </a>
             </div>
           </th>
-          <th scope="col" class="py-2 px-1 w-[30px]">K</th>
-          <th scope="col" class="py-2 px-1 w-[30px]">D</th>
-          <th scope="col" class="py-2 px-1 w-[30px]">A</th>
-          <th scope="col" class="py-2 px-1 text-accent">NET</th>
-          <th scope="col" class="py-2 px-1 w-[240px]">Items</th>
-          <th scope="col" class="py-2 px-1 w-[65px]">LH/DH</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">GPM</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">XPM</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">Heal</th>
-          <th scope="col" class="py-2 px-1 w-[55px]">DMG</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">BLD</th>
+          <th scope="col" class="py-3 px-1 w-[30px]">K</th>
+          <th scope="col" class="py-3 px-1 w-[30px]">D</th>
+          <th scope="col" class="py-3 px-1 w-[30px]">A</th>
+          <th scope="col" class="py-3 px-1 text-accent">NET</th>
+          <th scope="col" class="py-3 px-1 w-[240px]">Items</th>
+          <th scope="col" class="py-3 px-1 w-[65px]">LH/DH</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">GPM</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">XPM</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">Heal</th>
+          <th scope="col" class="py-3 px-1 w-[55px]">DMG</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">BLD</th>
         </tr>
       </thead>
       <tbody>
@@ -36,11 +36,11 @@
               <div class="border border-accent text-[9px] px-0.5 rounded-sm text-accent font-bold leading-3 h-[14px]">3</div>
             </div>
           </td>
-          <th scope="col" class="py-2 px-1">{{ player.k }}</th>
-          <th scope="col" class="py-2 px-1">{{ player.d }}</th>
-          <th scope="col" class="py-2 px-1">{{ player.a }}</th>
-          <td scope="col" class="py-2 px-1 text-accent">{{ player.net }}</td>
-          <td scope="col" class="py-2 px-1">
+          <th scope="col" class="py-3 px-1">{{ player.k }}</th>
+          <th scope="col" class="py-3 px-1">{{ player.d }}</th>
+          <th scope="col" class="py-3 px-1">{{ player.a }}</th>
+          <td scope="col" class="py-3 px-1 text-accent">{{ player.net }}</td>
+          <td scope="col" class="py-3 px-1">
             <div class="flex gap-2 w-[240px]">
               <div class="flex gap-0.5">
                 <img class="w-5 shadow-md rounded-sm" src="/img/none/item.png" alt="heroName" />
@@ -60,19 +60,19 @@
               </div>
             </div>
           </td>
-          <td scope="col" class="py-2 px-1">{{ player.LHDH }}</td>
-          <td scope="col" class="py-2 px-1 text-accent">{{ player.GPM }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.XPM }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.Heal }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.DMG }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.BLD }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.LHDH }}</td>
+          <td scope="col" class="py-3 px-1 text-accent">{{ player.GPM }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.XPM }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.Heal }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.DMG }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.BLD }}</td>
         </tr>
       </tbody>
     </table>
     <table class="w-full table-fixed text-xs text-left text-base-content">
       <thead class="text-xs text-neutral-content uppercase border-b border-slate-800 bg-block">
         <tr>
-          <th scope="col" class="py-2 px-2 w-[170px]">
+          <th scope="col" class="py-3 px-2 w-[170px]">
             <div class="flex items-center gap-2">
               <a href="#" class="flex h-7 w-9 justify-center">
                 <img class="h-7 w-7" src="/img/none/teamNoLogo.svg" alt="teamName" />
@@ -80,17 +80,17 @@
               <a href="#" class="flex text-right text-xs text-accent leading-4"> Dota Geniuses </a>
             </div>
           </th>
-          <th scope="col" class="py-2 px-1 w-[30px]">K</th>
-          <th scope="col" class="py-2 px-1 w-[30px]">D</th>
-          <th scope="col" class="py-2 px-1 w-[30px]">A</th>
-          <th scope="col" class="py-2 px-1 text-accent">NET</th>
-          <th scope="col" class="py-2 px-1 w-[240px]">Items</th>
-          <th scope="col" class="py-2 px-1 w-[65px]">LH/DH</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">GPM</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">XPM</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">Heal</th>
-          <th scope="col" class="py-2 px-1 w-[55px]">DMG</th>
-          <th scope="col" class="py-2 px-1 w-[50px]">BLD</th>
+          <th scope="col" class="py-3 px-1 w-[30px]">K</th>
+          <th scope="col" class="py-3 px-1 w-[30px]">D</th>
+          <th scope="col" class="py-3 px-1 w-[30px]">A</th>
+          <th scope="col" class="py-3 px-1 text-accent">NET</th>
+          <th scope="col" class="py-3 px-1 w-[240px]">Items</th>
+          <th scope="col" class="py-3 px-1 w-[65px]">LH/DH</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">GPM</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">XPM</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">Heal</th>
+          <th scope="col" class="py-3 px-1 w-[55px]">DMG</th>
+          <th scope="col" class="py-3 px-1 w-[50px]">BLD</th>
         </tr>
       </thead>
       <tbody>
@@ -105,11 +105,11 @@
               <div class="border border-accent text-[9px] px-0.5 rounded-sm text-accent font-bold leading-3 h-[14px]">3</div>
             </div>
           </td>
-          <th scope="col" class="py-2 px-1">{{ player.k }}</th>
-          <th scope="col" class="py-2 px-1">{{ player.d }}</th>
-          <th scope="col" class="py-2 px-1">{{ player.a }}</th>
-          <td scope="col" class="py-2 px-1 text-accent">{{ player.net }}</td>
-          <td scope="col" class="py-2 px-1">
+          <th scope="col" class="py-3 px-1">{{ player.k }}</th>
+          <th scope="col" class="py-3 px-1">{{ player.d }}</th>
+          <th scope="col" class="py-3 px-1">{{ player.a }}</th>
+          <td scope="col" class="py-3 px-1 text-accent">{{ player.net }}</td>
+          <td scope="col" class="py-3 px-1">
             <div class="flex gap-2 w-[240px]">
               <div class="flex gap-0.5">
                 <img class="w-5 shadow-md rounded-sm" src="/img/none/item.png" alt="heroName" />
@@ -129,12 +129,12 @@
               </div>
             </div>
           </td>
-          <td scope="col" class="py-2 px-1">{{ player.LHDH }}</td>
-          <td scope="col" class="py-2 px-1 text-accent">{{ player.GPM }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.XPM }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.Heal }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.DMG }}</td>
-          <td scope="col" class="py-2 px-1">{{ player.BLD }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.LHDH }}</td>
+          <td scope="col" class="py-3 px-1 text-accent">{{ player.GPM }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.XPM }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.Heal }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.DMG }}</td>
+          <td scope="col" class="py-3 px-1">{{ player.BLD }}</td>
         </tr>
       </tbody>
     </table>
