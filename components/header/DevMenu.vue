@@ -18,11 +18,14 @@
           <li><a href="/dota-2/">Game <IconCirclecheck filled/></a></li>
           <li><a href="/matches/">Match List <IconCirclecheck filled/></a></li>
           <li><a href="/match/">Match <IconCirclecheck filled/></a></li>
-          <li><a href="/dota-2/">Event List</a></li>
-          <li><a href="/dota-2/">Event</a></li>
+          
+          <li><a href="/events/">Event List <IconCirclecheck filled/></a></li>
+          <li><a href="/event/">Event <IconCirclecheck filled/></a></li>
+
           <li><a href="/text/">Text</a></li>
           <li><a href="/text/">News List</a></li>
           <li><a href="/text/">News Page</a></li>
+          
           <li><a href="/text/">Players List</a></li>
           <li><a href="/text/">Player</a></li>
           <li><a href="/text/">Teams List</a></li>
@@ -30,3 +33,7 @@
         </ul>
       </div>
 </template>
+
+<script setup lang="ts">
+import { IconCirclecheck } from "@/assets/img/icons/";
+</script>

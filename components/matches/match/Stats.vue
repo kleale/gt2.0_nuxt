@@ -1235,7 +1235,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .tippy-content {
   padding: 2px 9px;
 }

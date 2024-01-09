@@ -1,6 +1,6 @@
 import type { EventsCard } from '#build/components';
 <template>
-  <CommonBlocklayout header="Tournaments">
+  <CommonBlocklayout header="Live events">
     <template v-slot:header-extra>
       <CommonGamelinks />
     </template>
