@@ -23,8 +23,8 @@
           <li><a href="/event/">Event <IconCirclecheck filled/></a></li>
 
           <li><a href="/text/">Text <IconCirclecheck filled/></a></li>
-          <li><a href="/text/">News List</a></li>
-          <li><a href="/text/">News Page</a></li>
+          <li><a href="/news/">News List <IconCirclecheck filled/></a></li>
+          <li><a href="/newsPage/">News Page</a></li>
           
           <li><a href="/text/">Players List</a></li>
           <li><a href="/text/">Player</a></li>
