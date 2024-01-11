@@ -103,3 +103,12 @@ body {
   background: #666666; 
   border-radius: 5px;
 }
+
+.card{
+  --rounded-box: .2rem;
+}
+
+:root .prose{
+  --tw-prose-links: #91CDD7;
+  --tw-prose-headings: #91CDD7;
+}

@@ -3,13 +3,16 @@
       <div class="grid grid-cols-7 gap-3 pt-3">
         <div class="col-span-12 md:col-span-5">
           <div class="flex flex-col gap-3">
+
             <CommonBlocklayout header="News">
               <template v-slot:header-extra>
                 <CommonGamelinks :isCompact="true" />
               </template>
-              <NewsCardLarge2 :data="news[0]" />
+              <div class="p-3">
+              <NewsCarousel />
+            </div>
               <div class="p-4">
-                <template v-for="(newsItem, index) in news.slice(0, 5)">
+                <template v-for="(newsItem, index) in news">
                   <NewsBlock :data="newsItem" />
                 </template>
               </div>
@@ -46,6 +49,38 @@
       id: 0,
       src: "https://escorenews.com/media/news/_468/n53609.webp",
       game: Dota2,
+      isImg: true,
+      date: "15 may, 13:00",
+    },
+    {
+      name: "I believe I was one of the best carries and can become the best offlaner in the world now",
+      id: 0,
+      src: "https://escorenews.com/media/news/_468/n53609.webp",
+      game: CS2,
+      isImg: true,
+      date: "15 may, 13:00",
+    },
+    {
+      name: " What teams will play in BLAST Paris Major playoffs? Every team qualified for main stage in France",
+      id: 0,
+      src: "https://escorenews.com/media/news/_468/n53609.webp",
+      game: Dota2,
+      isImg: false,
+      date: "15 may, 13:00",
+    },
+    {
+      name: "Legends Stage Pick'Em Challenge predictions made by pro-players, analysts, and insiders for BLAST Paris Major 2023",
+      id: 0,
+      src: "https://escorenews.com/media/news/_468/n53609.webp",
+      game: Lol,
+      isImg: false,
+      date: "15 may, 13:00",
+    },
+    {
+      name: "Rainbow Six Siege Y8S2 next operator Fenrir leaks and details: lore, appearance, gadget, loadout and release date",
+      id: 0,
+      src: "https://escorenews.com/media/news/_468/n53609.webp",
+      game: CS2,
       isImg: false,
       date: "15 may, 13:00",
     },
@@ -54,7 +89,7 @@
       id: 0,
       src: "https://escorenews.com/media/news/_468/n53609.webp",
       game: CS2,
-      isImg: false,
+      isImg: true,
       date: "15 may, 13:00",
     },
     {

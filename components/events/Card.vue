@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="flex w-full flex-col gap-5 text-primary hover:text-primary transition hover:border-slate-500 hover:scale-95">
+  <a href="/" class="flex w-full flex-col gap-5 text-primary hover:text-primary transition hover:border-slate-500 hover:scale-99">
     <figure class="figure flex justify-center bg-base-100 shadow-xl overflow-hidden rounded border border-slate-700">
       <span class="flex border-slate-700 h-[80px]" :style="{ backgroundImage: 'url(' + data.eIcon + ')' }"></span>
       <!-- <img :src="data.src" alt="news" class="h-[150px]" /> -->

@@ -24,12 +24,12 @@
 
           <li><a href="/text/">Text <IconCirclecheck filled/></a></li>
           <li><a href="/news/">News List <IconCirclecheck filled/></a></li>
-          <li><a href="/newsPage/">News Page</a></li>
+          <li><a href="/newsPage/">News Page <IconCirclecheck filled/></a></li>
           
-          <li><a href="/text/">Players List</a></li>
-          <li><a href="/text/">Player</a></li>
-          <li><a href="/text/">Teams List</a></li>
-          <li><a href="/text/">Team</a></li>
+          <li><a href="/players/">Players List</a></li>
+          <li><a href="/player/">Player</a></li>
+          <li><a href="/teams/">Teams List</a></li>
+          <li><a href="/team/">Team</a></li>
         </ul>
       </div>
 </template>
