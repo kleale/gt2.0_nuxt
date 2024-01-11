@@ -1,11 +1,13 @@
 <template>
-  <tr class="flex border-b border-b-slate-800 odd:bg-slate-800 odd:bg-opacity-10 last:border-0 hover:bg-opacity-10 hover:bg-gray-700">
-    <th scope="col" class="py-3 px-1"></th>
-    <th scope="col" class="py-3 px-1">{{ player.name }}</th>
-    <th scope="col" class="py-3 px-1">{{ player.name }}</th>
-    <th scope="col" class="py-3 px-1">{{ player.name }}</th>
-    <th scope="col" class="py-3 px-1">{{ player.name }}</th>
-    <th scope="col" class="py-3 px-1">{{ player.name }}</th>
+  <tr class="border-b border-b-slate-800 odd:bg-slate-800 odd:bg-opacity-10 last:border-0 hover:bg-opacity-10 hover:bg-gray-700">
+    <td scope="col" class="py-3 px-1"></td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
+    <td scope="col" class="py-3 px-1">{{ player.name }}</td>
   </tr>
 </template>
 
