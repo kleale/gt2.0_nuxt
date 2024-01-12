@@ -1,5 +1,6 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
+    <CommonBreadcrumbs />
     <div class="grid grid-cols-7 gap-3 pt-3">
       <div class="col-span-12 md:col-span-5">
         <div class="flex flex-col gap-3">

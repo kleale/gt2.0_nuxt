@@ -26,8 +26,8 @@
           <li><a href="/news/">News List <IconCirclecheck filled/></a></li>
           <li><a href="/newsPage/">News Page <IconCirclecheck filled/></a></li>
           
-          <li><a href="/players/">Players List</a></li>
-          <li><a href="/player/">Player</a></li>
+          <li><a href="/players/">Players List <IconCirclecheck filled/></a></li>
+          <li><a href="/player/">Player <IconCirclecheck filled/></a></li>
           <li><a href="/teams/">Teams List</a></li>
           <li><a href="/team/">Team</a></li>
         </ul>

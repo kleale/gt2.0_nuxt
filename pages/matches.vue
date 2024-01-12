@@ -1,5 +1,6 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
+    <CommonBreadcrumbs />
     <EventsBlockSmall />
 
     <div class="grid grid-cols-7 gap-3 pt-3">
@@ -24,10 +25,10 @@
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
             </template>
+            <div class="flex justify-start p-2">
+              <CommonPagination />
+            </div>
           </CommonBlocklayout>
-          <div class="flex justify-center">
-            <CommonPagination />
-          </div>
 
           <CommonBlocklayout header="Last Dota 2 matches">
             <template v-slot:header-extra>
@@ -48,10 +49,11 @@
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
             </template>
+            <div class="flex justify-start p-2">
+              <CommonPagination />
+            </div>
           </CommonBlocklayout>
-          <div class="flex justify-center">
-            <CommonPagination />
-          </div>
+
         </div>
       </div>
       <div class="col-span-12 md:col-span-2">

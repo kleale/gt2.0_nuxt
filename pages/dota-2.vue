@@ -1,5 +1,6 @@
 <template>
   <div class="p-4 xl:p-0 xl:pt-4">
+    <CommonBreadcrumbs />
     <MatchesStreamBlock />
     <BannersB1190 />
 
@@ -25,10 +26,10 @@
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
             </template>
+            <div class="flex justify-start p-2">
+              <CommonPagination />
+            </div>
           </CommonBlocklayout>
-          <div class="flex justify-center">
-            <CommonPagination />
-          </div>
 
           <CommonBlocklayout header="Last Dota 2 matches">
             <template v-slot:header-extra>
@@ -49,10 +50,10 @@
             <template v-for="(match, index) in matches">
               <MatchesRow :match="match" />
             </template>
+            <div class="flex justify-start p-2">
+              <CommonPagination />
+            </div>
           </CommonBlocklayout>
-          <div class="flex justify-center">
-            <CommonPagination />
-          </div>
 
           <CommonTextblock>
             <template v-slot:header-extra>Does Dota 2 have esports? </template>
@@ -147,7 +148,8 @@ const events = [
     isLive: false,
     eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
     src: "https://escorenews.com/media/tournament/_300/e8527.webp",
-  },{
+  },
+  {
     id: 0,
     name: "ESL One Birmingham 2024",
     game: Dota2,
@@ -190,7 +192,8 @@ const events = [
     isLive: false,
     eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
     src: "https://escorenews.com/media/tournament/_300/e8527.webp",
-  },{
+  },
+  {
     id: 3,
     name: "Winline Insight Season 4",
     game: Lol,
@@ -200,7 +203,8 @@ const events = [
     isLive: false,
     eIcon: "https://escorenews.com/media/event/_120/e8527.webp",
     src: "https://escorenews.com/media/tournament/_300/e8527.webp",
-  },{
+  },
+  {
     id: 3,
     name: "Winline Insight Season 4",
     game: Lol,
@@ -266,7 +270,8 @@ const comments = [
     time: "11-00",
     comment: "Буду комментить этот матч - заходите кто хочет)",
     name: "Ezio",
-  },{
+  },
+  {
     id: 0,
     match: "SNG vs yK",
     game: Dota2,
@@ -275,7 +280,8 @@ const comments = [
     time: "11-00",
     comment: "Буду комментить этот матч - заходите кто хочет)",
     name: "Ezio",
-  },{
+  },
+  {
     id: 0,
     match: "SNG vs yK",
     game: Dota2,
@@ -343,7 +349,7 @@ const drop4 = {
   ],
 };
 
-import { IconRefresh, IconScore} from "@/assets/img/icons/";
+import { IconRefresh, IconScore } from "@/assets/img/icons/";
 
 const matches = [
   { id: 0, t1: "Astralis", t1Icon: "/img/none/teamNoLogo.svg", t2: "The Mongolz", t2Icon: "https://escorenews.com/media/logo/_60/t5270.webp", game: Dota2, gameId: "1", score: "1:0", date: "Oct 14", time: "11:34", isLive: true, map: 1, event_id: 1, eventName: "ESEA Open Season 47", eIcon: "/img/none/tourNoLogo.svg", type: "BO3" },

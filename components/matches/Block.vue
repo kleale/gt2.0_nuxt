@@ -14,13 +14,13 @@
     <template v-for="(match, index) in matches">
       <MatchesRow :match="match" />
     </template>
+    <div class="flex justify-start p-2">
+      <CommonPagination />
+    </div>
   </CommonBlocklayout>
-  <div class="flex justify-center">
-    <CommonPagination />
-  </div>
 </template>
 <script setup lang="ts">
-import { IconRefresh, IconScore} from "@/assets/img/icons/";
+import { IconRefresh, IconScore } from "@/assets/img/icons/";
 import { Dota2, CS2, Hs, Lol, Ow, Pubg, Fortnite } from "@/assets/img/icons/";
 
 const matches = [

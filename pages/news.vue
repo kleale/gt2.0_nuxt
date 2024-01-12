@@ -1,5 +1,6 @@
 <template>
     <div class="p-4 xl:p-0 xl:pt-4">
+      <CommonBreadcrumbs />
       <div class="grid grid-cols-7 gap-3 pt-3">
         <div class="col-span-12 md:col-span-5">
           <div class="flex flex-col gap-3">
@@ -16,20 +17,15 @@
                   <NewsBlock :data="newsItem" />
                 </template>
               </div>
+              <div class="flex justify-start p-2">
+                <CommonPagination />
+              </div>
             </CommonBlocklayout>
-            <div class="flex justify-center">
-              <CommonPagination />
-            </div>
           </div>
         </div>
         <div class="col-span-12 md:col-span-2">
           <div class="flex flex-col gap-3">
-            <CommonTextblocksmall>
-              <template v-slot:header-extra>Tournaments DOTA2 </template>
-              <p>All Dota 2 tournaments. List of all future and past tournaments, schedule of events and matches.</p>
-            </CommonTextblocksmall>
             <BannersB330 />
-            
           </div>
         </div>
       </div>

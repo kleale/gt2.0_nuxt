@@ -29,7 +29,7 @@
               <MatchesMatchStats />
             </div>
           </CommonBlocklayoutCustom>
-          
+
           <MatchesMatchDataTable />
         </div>
       </div>
@@ -51,7 +51,6 @@
         </div>
       </div>
     </div>
-
     <div class="flex flex-col gap-5 pt-5">
       <MatchesMatchMatchesByTeam />
       <BannersB1190 />

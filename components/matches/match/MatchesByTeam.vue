@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="col-span-1 md:col-span-3">
-        <div v-for="match in matchesT2" class="flex border-b border-slate-800 odd:bg-slate-800 odd:bg-opacity-10 hover:bg-opacity-10 hover:bg-gray-700 border-l-4 " :class="match.win ? 'border-l-accent' : 'border-l-red-400'">
+        <div v-for="match in matchesT2" class="flex border-b border-slate-800 odd:bg-slate-800 odd:bg-opacity-10 hover:bg-opacity-10 hover:bg-gray-700 border-l-4" :class="match.win ? 'border-l-accent' : 'border-l-red-400'">
           <div class="flex items-start md:items-center pl-2 md:pl-4 w-[70px] md:w-36 flex-col md:flex-row">
             <!-- <img class="h-5" src="/img/games/lol.svg" alt="gameName" /> -->
             <div class="flex flex-col">
@@ -91,8 +91,10 @@
           </div>
         </div>
       </div>
+      <div class="flex justify-center p-2">
+        <CommonPagination />
+      </div>
     </div>
-    <CommonPagination />
   </div>
 </template>
 
