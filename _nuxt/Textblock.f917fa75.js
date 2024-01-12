@@ -1,0 +1,1 @@
+import{_ as n,v as o,x as _,y as s,R as t}from"./entry.f5e68c6f.js";const a={},d={class:"textBlock text-base p-12"};function r(e,c){return o(),_("div",d,[s("h2",null,[t(e.$slots,"header-extra",{},void 0,!0)]),s("p",null,[t(e.$slots,"default",{},void 0,!0)]),t(e.$slots,"header-footer",{},void 0,!0)])}const u=n(a,[["render",r],["__scopeId","data-v-8a2b944d"]]);export{u as _};
