@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   //     baseURL: process.env.BASE_URL || 'https://kleale.github.io/gt2.0_nuxt/',
   //   },
   // },
+  app: {
+    baseURL: '/gt2.0_nuxt/'
+  },
   css: ["~/assets/css/main.css"],
   modules: ["nuxt-svgo"],
   postcss: {

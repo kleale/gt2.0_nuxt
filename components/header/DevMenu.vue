@@ -13,23 +13,23 @@
           </svg>
         </div>
         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 text-xs shadow bg-base-100 rounded-box w-40">
-          <li><a href="/">Index <IconCirclecheck filled/></a></li>
-          <li><a href="/indexmobile/">Index Mob <IconCirclecheck filled/></a></li>
-          <li><a href="/dota-2/">Game <IconCirclecheck filled/></a></li>
-          <li><a href="/matches/">Match List <IconCirclecheck filled/></a></li>
-          <li><a href="/match/">Match <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/">Index <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/indexMobile/">Index Mob <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/dota-2/">Game <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/matches/">Match List <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/match/">Match <IconCirclecheck filled/></a></li>
           
-          <li><a href="/events/">Event List <IconCirclecheck filled/></a></li>
-          <li><a href="/event/">Event <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/events/">Event List <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/event/">Event <IconCirclecheck filled/></a></li>
 
-          <li><a href="/text/">Text <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/text/">Text <IconCirclecheck filled/></a></li>
           <li><a href="/news/">News List <IconCirclecheck filled/></a></li>
-          <li><a href="/newsPage/">News Page <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/newsPage/">News Page <IconCirclecheck filled/></a></li>
           
-          <li><a href="/players/">Players List <IconCirclecheck filled/></a></li>
-          <li><a href="/player/">Player <IconCirclecheck filled/></a></li>
-          <li><a href="/teams/">Teams List</a></li>
-          <li><a href="/team/">Team</a></li>
+          <li><a href="/gt2.0_nuxt/players/">Players List <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/player/">Player <IconCirclecheck filled/></a></li>
+          <li><a href="/gt2.0_nuxt/teams/">Teams List</a></li>
+          <li><a href="/gt2.0_nuxt/team/">Team</a></li>
         </ul>
       </div>
 </template>
