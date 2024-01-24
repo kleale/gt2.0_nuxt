@@ -1,1 +1,0 @@
-import{_ as s,v as o,x as n,y as _,R as t}from"./entry.f5e68c6f.js";const d={},r={class:"textBlock text-sm p-6"};function a(e,c){return o(),n("div",r,[_("h2",null,[t(e.$slots,"header-extra",{},void 0,!0)]),t(e.$slots,"default",{},void 0,!0),t(e.$slots,"header-footer",{},void 0,!0)])}const u=s(d,[["render",a],["__scopeId","data-v-c0289de9"]]);export{u as _};
